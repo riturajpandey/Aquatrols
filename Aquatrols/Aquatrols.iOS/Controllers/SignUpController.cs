@@ -15,7 +15,7 @@
     using static Aquatrols.Models.ConfigEntity;
 
     namespace Aquatrols.iOS
-    {
+    {   
         /// <summary>
         /// this class file is used for sign up screen
         /// </summary>
