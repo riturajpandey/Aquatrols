@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/HeaderHeight">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="@dimen/InnerContentPadding"
+            android:text="Dan Macias - Pacific Northwest Territory Manager"
+            android:textSize="@dimen/InnerLabelTextsize" />-->
+    <!--<LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:padding="@dimen/InnerContentPadding"
+            android:layout_height="wrap_content"
+            android:weightSum="100">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/DanMacias"
+                android:layout_weight="50" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/InnerContentPadding"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Sales Office"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="363 Liberty Lane"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sagle, ID 83860"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:id="@+id/txtDMaciusPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="541-971-3794"
+                    android:textColor="@color/appBackground"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:id="@+id/dmaciusEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:linksClickable="true"
+                    android:autoLink="web"
+                    android:textColor="@color/appBackground"
+                    android:text="@string/dmaciusEmail"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="@dimen/InnercontentMargin" />-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="@dimen/InnerContentPadding"
+            android:textStyle="bold"
+            android:text="Ken Mauser - Western Territory Manager"
+            android:textSize="@dimen/InnerLabelTextsize" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/InnerContentPadding"
+            android:weightSum="100">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/KenMauser"
+                android:layout_weight="50" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/InnerContentPadding"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sales Office"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1120 Barby Springs Ave"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Henderson, NV 89014"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:id="@+id/txtKMauserMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(805)402-4863"
+                    android:textColor="@color/appBackground"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:id="@+id/kmauserEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/appBackground"
+                    android:text="@string/kmauserEmail"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="@dimen/InnerContentPadding" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@color/lightgrey"
+            android:padding="@dimen/InnerContentPadding"
+            android:textStyle="bold"
+            android:text="John “JT” Turner - North Central Territory Manager"
+            android:textSize="@dimen/InnerLabelTextsize" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightgrey"
+            android:padding="@dimen/InnerContentPadding"
+            android:weightSum="100">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/JohnTurner"
+                android:layout_weight="50" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/InnerContentPadding"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sales Office"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="40W665 Campton Woods Drive"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Elburn, IL 60119"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:id="@+id/txtJTurnerMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="630-215-6110"
+                    android:textColor="@color/appBackground"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:id="@+id/jturnerEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/appBackground"
+                    android:text="@string/jturnerEmail"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="@dimen/InnerContentPadding" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="@dimen/InnerContentPadding"
+            android:text="Robert Wilson - Southwest Territory Manager"
+            android:textSize="@dimen/InnerLabelTextsize" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="@dimen/InnerContentPadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/RobertWillson"
+                android:layout_weight="50" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/InnerContentPadding"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Sales Office"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3424 Steven Drive"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Plano, TX 75023"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Phone"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:id="@+id/txtRWilsonMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="513-319-1827"
+                    android:textColor="@color/appBackground"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Email"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:id="@+id/rwilsonEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/appBackground"
+                    android:text="@string/rwilsonEmail"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="@dimen/InnerContentPadding" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Greg Lovell - Central East  Territory Manager"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="@color/lightgrey"
+            android:padding="@dimen/InnerContentPadding"
+            android:textSize="@dimen/InnerLabelTextsize" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightgrey"
+            android:padding="@dimen/InnerContentPadding"
+            android:weightSum="100">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/GregLovell"
+                android:layout_weight="50" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/InnerContentPadding"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sales Office"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="8110 Yellow River Rd"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fort Wayne, IN 46818"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Mobile"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:id="@+id/txtGLovellMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(260) 409-3363"
+                    android:textColor="@color/appBackground"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:id="@+id/glovellEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/glovellEmail"
+                    android:textColor="@color/appBackground"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="@dimen/InnerContentPadding" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/InnerContentPadding"
+            android:text="Scott Poynot - Central South  Territory Manager"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/InnerLabelTextsize" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:padding="@dimen/InnerContentPadding"
+            android:layout_height="wrap_content"
+            android:weightSum="100">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ScottPynot"
+                android:layout_weight="50" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/InnerContentPadding"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sales Office"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="210 S Girouard Rd"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Broussard, LA 70518"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Mobile"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:id="@+id/txtSPoynotMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(337) 962-3590"
+                    android:textColor="@color/appBackground"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:id="@+id/spoynotEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/spoynotEmail"
+                    android:textColor="@color/appBackground"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="@dimen/InnerContentPadding" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="@color/lightgrey"
+            android:padding="@dimen/InnerContentPadding"
+            android:text="Tom Valentine - Northeast  Territory Manager"
+            android:textSize="@dimen/InnerLabelTextsize" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightgrey"
+            android:padding="@dimen/InnerContentPadding"
+            android:weightSum="100">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/TomValentineAquatrols"
+                android:layout_weight="50" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/InnerContentPadding"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sales Office"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4 Kings Circle"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Malvern, PA 19355"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:id="@+id/txtTValentineMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(610) 299-4470"
+                    android:textColor="@color/appBackground"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:id="@+id/tvalentineEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/appBackground"
+                    android:text="@string/tvalentineEmail"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="@dimen/InnerContentPadding" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wes Hamm - Southeast Territory Manager"
+            android:textColor="@color/black"
+            android:padding="@dimen/InnerContentPadding"
+            android:textStyle="bold"
+            android:textSize="@dimen/InnerLabelTextsize" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:padding="@dimen/InnerContentPadding"
+            android:layout_height="wrap_content"
+            android:weightSum="100">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/WesHamm"
+                android:layout_weight="50" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/InnerContentPadding"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sales Office"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="837 Sparkleberry Rd"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Evans, GA 30809"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:id="@+id/txtWHammMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(706) 840-5374"
+                    android:textColor="@color/appBackground"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:id="@+id/whammEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/appBackground"
+                    android:text="@string/whammEmail"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="@dimen/InnerContentPadding" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Walter Dea – Canadian Territory Manager"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="@color/lightgrey"
+            android:padding="@dimen/InnerContentPadding"
+            android:textSize="@dimen/InnerLabelTextsize" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightgrey"
+            android:padding="@dimen/InnerContentPadding"
+            android:weightSum="100">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/WalterDea"
+                android:layout_weight="50" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/InnerContentPadding"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sales Office"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="261 Grande Cote Ouest"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lanoraie, QC, Canada J0K 1E0"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:id="@+id/txtPhoneWDea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="450-581-4197"
+                    android:textColor="@color/appBackground"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:id="@+id/txtMobileWDea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="514-602-8410"
+                    android:textColor="@color/appBackground"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+                <TextView
+                    android:id="@+id/WDeaEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/appBackground"
+                    android:text="@string/wdeaEmail"
+                    android:textSize="@dimen/InnerLabelTextsize" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

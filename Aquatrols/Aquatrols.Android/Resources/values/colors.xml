@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="appHeader">#163762</color>
+  <color name="appBackground">#0070A2</color>
+  <color name="appHeaderControls">#FFF</color>
+  <color name="appLandingColor">#2D0B26</color>
+  <color name="colorPrimary">#2D2926</color>
+  <color name="colorPrimaryDark">#2D2926</color>
+  <color name="colorAccent">#D3D3D3</color>
+  <color name="primary_pressed">#2C3E50</color>
+  <color name="ripple">#ff80ab</color>
+  <color name="accent_pressed">#BF360C</color>
+  <color name="primary_light">#C5CAE9</color>
+  <color name="primary_text">#212121</color>
+  <color name="secondary_text">#727272</color>
+  <color name="icons">#FFFFFF</color>
+  <color name="divider">#B6B6B6</color>
+  <color name="indigo">#4B0082</color>
+  <color name="pink">#e52b0b</color>
+  <color name="white">#FFF</color>
+  <color name="golden">#D0B786</color>
+  <color name="black">#2D2926</color>
+  <color name="green">#009688</color>
+  <color name="grey">#737373</color>
+  <color name="lightgreen">#00AE42</color>
+  <color name="lightgrey">#D3D3D3</color>
+  <color name="blue">#0089FF</color>
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/InnerContentPadding"
+            android:weightSum="135">
+            <ImageView
+                android:id="@+id/imgAbout"
+                android:layout_width="0dp"
+                android:src="@drawable/AboutAquatrols"
+                android:layout_height="@dimen/ProductDetailImageLogoHeight"
+                android:layout_weight="30" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/ProductDetailImageLogoHeight"
+                android:layout_weight="5" />
+            <ImageView
+                android:id="@+id/imgProducts"
+                android:layout_width="0dp"
+                android:src="@drawable/ProductsButton"
+                android:layout_height="@dimen/ProductDetailImageLogoHeight"
+                android:layout_weight="30" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/ProductDetailImageLogoHeight"
+                android:layout_weight="5" />
+            <ImageView
+                android:id="@+id/imgTManager"
+                android:layout_width="0dp"
+                android:src="@drawable/TerritoryManagerButton"
+                android:layout_height="@dimen/ProductDetailImageLogoHeight"
+                android:layout_weight="30" />
+              <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/ProductDetailImageLogoHeight"
+                android:layout_weight="5" />
+            <ImageView
+                android:id="@+id/imgAboutApp"
+                android:layout_width="0dp"
+                android:src="@drawable/AquatrolsLogoCircle1"
+                android:layout_height="@dimen/ProductDetailImageLogoHeight"
+                android:layout_weight="30" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/InnercontentMargin" />
+        <View
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_width="match_parent" />
+        <LinearLayout
+            android:id="@+id/llsocialIcon"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/lightgrey"
+            android:gravity="center">
+            <TextView
+                android:text="Follow Aquatrols Online:"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/deleteIconHeight"
+                android:paddingLeft="@dimen/InnerContentPadding"
+                android:gravity="center_vertical"
+                android:textColor="@color/black" />
+            <LinearLayout
+                android:layout_height="@dimen/UserInfoContainerHeight"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/InnerContentPadding"
+                android:paddingBottom="@dimen/InnerContentPadding"
+                android:paddingRight="@dimen/InnerContentPadding"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="100">
+                <ImageView
+                    android:id="@+id/rss"
+                    android:layout_height="@dimen/socialImageheight"
+                    android:layout_width="0dp"
+                    android:layout_weight="20"
+                    android:src="@drawable/rss" />
+                <ImageView
+                    android:id="@+id/twitter"
+                    android:layout_height="@dimen/socialImageheight"
+                    android:layout_width="0dp"
+                    android:layout_weight="20"
+                    android:src="@drawable/twitter" />
+                <ImageView
+                    android:id="@+id/facebook"
+                    android:layout_height="@dimen/socialImageheight"
+                    android:layout_width="0dp"
+                    android:layout_weight="20"
+                    android:src="@drawable/facebook" />
+                <ImageView
+                    android:id="@+id/youtube"
+                    android:layout_height="@dimen/socialImageheight"
+                    android:layout_width="0dp"
+                    android:layout_weight="20"
+                    android:src="@drawable/youtube" />
+                <ImageView
+                    android:id="@+id/instagram"
+                    android:layout_height="@dimen/socialImageheight"
+                    android:layout_width="0dp"
+                    android:layout_weight="20"
+                    android:src="@drawable/instagram" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_width="match_parent" />
+        <Button
+            android:id="@+id/btnsendEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:padding="@dimen/InnerContentPadding"
+            android:textSize="@dimen/InnerLabelTextsize"
+            android:layout_marginTop="@dimen/InnerContentPadding"
+            android:text="SEND EMAIL"
+            android:background="#005A82"
+            android:layout_marginBottom="@dimen/HeaderHeight" />
+    </LinearLayout>
+</ScrollView>

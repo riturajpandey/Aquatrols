@@ -1,0 +1,1552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="NetworkUrl" xml:space="preserve">
+    <value>www.google.com</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>No Internet Connection</value>
+  </data>
+  <data name="DownLoadCompleted" xml:space="preserve">
+    <value>DownLoad Completed.</value>
+  </data>
+  <data name="CountryName" xml:space="preserve">
+    <value>CountryName</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>Password does not meet the criteria</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>Email Address is not valid.</value>
+  </data>
+  <data name="RequireUserName" xml:space="preserve">
+    <value>Email Address is required.</value>
+  </data>
+  <data name="RequirePassword" xml:space="preserve">
+    <value>Password is required.</value>
+  </data>
+  <data name="RequireFirstName" xml:space="preserve">
+    <value>First name is required.</value>
+  </data>
+  <data name="RequireLastName" xml:space="preserve">
+    <value>Last name is required.</value>
+  </data>
+  <data name="InvalidUserName" xml:space="preserve">
+    <value>Email Address is not valid.</value>
+  </data>
+  <data name="RequireMobile" xml:space="preserve">
+    <value>Mobile number is required.</value>
+  </data>
+  <data name="RequirePhone" xml:space="preserve">
+    <value>Phone number is required.</value>
+  </data>
+  <data name="InvalidMobile" xml:space="preserve">
+    <value>Mobile Number is not valid.</value>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Phone Number is not valid.</value>
+  </data>
+  <data name="RequireCourseName" xml:space="preserve">
+    <value>Course name is required.</value>
+  </data>
+  <data name="RequireStreetAddress" xml:space="preserve">
+    <value>Street address is required.</value>
+  </data>
+  <data name="RequireCity" xml:space="preserve">
+    <value>City is required.</value>
+  </data>
+  <data name="RequireState" xml:space="preserve">
+    <value>State is required.</value>
+  </data>
+  <data name="RequireDistributor" xml:space="preserve">
+    <value>Distributor is required.</value>
+  </data>
+  <data name="RequireZip" xml:space="preserve">
+    <value>Zipcode is required.</value>
+  </data>
+  <data name="RequireUserCategory" xml:space="preserve">
+    <value>User Category is required.</value>
+  </data>
+  <data name="RequireCountry" xml:space="preserve">
+    <value>Country is required.</value>
+  </data>
+  <data name="RequireCPassword" xml:space="preserve">
+    <value>Confirm Password is required.</value>
+  </data>
+  <data name="InvalidConfirmPassword" xml:space="preserve">
+    <value>Password does not match.</value>
+  </data>
+  <data name="RequireEmailAddress" xml:space="preserve">
+    <value>Email Address is required.</value>
+  </data>
+  <data name="RequireOTP" xml:space="preserve">
+    <value>OTP Code is required.</value>
+  </data>
+  <data name="newCourseEntered" xml:space="preserve">
+    <value>Course Name you entered is new kindly fill address detail.</value>
+  </data>
+  <data name="RequireCheckBox" xml:space="preserve">
+    <value>Please Select Check box.</value>
+  </data>
+  <data name="SuccessCourse" xml:space="preserve">
+    <value>Course Added Successfully.</value>
+  </data>
+  <data name="NoDistributors" xml:space="preserve">
+    <value>No Approved Aquatrols Distributors found.</value>
+  </data>
+  <data name="RequireCurrentPassword" xml:space="preserve">
+    <value>Current Password is required.</value>
+  </data>
+  <data name="RequireNewPassword" xml:space="preserve">
+    <value>New Password is required.</value>
+  </data>
+  <data name="Require" xml:space="preserve">
+    <value> is required.</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>add </value>
+  </data>
+  <data name="Litre" xml:space="preserve">
+    <value>Litre</value>
+  </data>
+  <data name="RequireProductList" xml:space="preserve">
+    <value>Product List is empty.</value>
+  </data>
+  <data name="RequireBookingLabel" xml:space="preserve">
+    <value>To participate in current program, simply type quantities in the Amount Field and hit the Add to Queue button. Once finished adding product, click Review to start the Checkout Process.</value>
+  </data>
+  <data name="RequireBookingLabelNoProducts" xml:space="preserve">
+    <value>There are currently no programs in effect. Please check with your Aquatrols representative for future program dates. Thank you.</value>
+  </data>
+  <data name="RequireNoBookingLabel" xml:space="preserve">
+    <value>We are not currently running any programs, please check back soon.</value>
+  </data>
+  <data name="RequireReviewLabel" xml:space="preserve">
+    <value>​Please review before enrollment</value>
+  </data>
+  <data name="RequireCheckoutLabel" xml:space="preserve">
+    <value>Commit</value>
+  </data>
+  <data name="RequireConfirmationLabel" xml:space="preserve">
+    <value>Thank you, your program enrollment has been received by Aquatrols</value>
+  </data>
+  <data name="RequireConfirmationRedeemLabel" xml:space="preserve">
+    <value>Thank you, Your order has been confirmed and a notification will be sent to your inbox.</value>
+  </data>
+  <data name="RequirePointsCheckoutLabel" xml:space="preserve">
+    <value>Points Checkout</value>
+  </data>
+  <data name="SDS" xml:space="preserve">
+    <value>SDS</value>
+  </data>
+  <data name="RequireTermsConsLabel" xml:space="preserve">
+    <value>Terms And Conditions</value>
+  </data>
+  <data name="RequireLabel" xml:space="preserve">
+    <value>Label</value>
+  </data>
+  <data name="RequirePrivacylbl" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="RequireFaqLbl" xml:space="preserve">
+    <value>FAQ</value>
+  </data>
+  <data name="RequireSupportlbl" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="RequireVision" xml:space="preserve">
+    <value>To establish Aquatrols as the green industry authority for conservation based solutions.</value>
+  </data>
+  <data name="RequireMission" xml:space="preserve">
+    <value>Pioneer new methods which advance conservation, and health for agriculture, turf and horticulture</value>
+  </data>
+  <data name="RequirePurpose" xml:space="preserve">
+    <value>Innovate for growers worldwide, Improve water management solutions and Inspire an entire industry</value>
+  </data>
+  <data name="NoAppFound" xml:space="preserve">
+    <value>No App found to send Email</value>
+  </data>
+  <data name="EarnedlblTooltip" xml:space="preserve">
+    <value>Total number of points earned over the program period</value>
+  </data>
+  <data name="RedeemlblTooltip" xml:space="preserve">
+    <value>Number of points that have been spent by the facility</value>
+  </data>
+  <data name="BalancelblTooltip" xml:space="preserve">
+    <value>Number of points left available to spend</value>
+  </data>
+  <data name="LabelDistributor" xml:space="preserve">
+    <value>Choose your distributor from the dropdown menu to proceed.</value>
+  </data>
+  <data name="LabelEOPProducts" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="LabelRedeemPoints" xml:space="preserve">
+    <value>Redeem Points</value>
+  </data>
+  <data name="LabelRedeem" xml:space="preserve">
+    <value>Approach Point Redemption period begins on June 1, 2019. To redeem points for a rewards item, simply enter the desired amount of your available points in the “Amount” field and hit the “Redeem” button. Unredeemed points do not expire.</value>
+  </data>
+  <data name="NoData" xml:space="preserve">
+    <value>Record not found.</value>
+  </data>
+  <data name="NoExcelFile" xml:space="preserve">
+    <value>Excel file is not found in your folder you can first download excel file and then you can share excel file.</value>
+  </data>
+  <data name="PointsAvailable" xml:space="preserve">
+    <value> Points Available to Spend</value>
+  </data>
+  <data name="AllProducts" xml:space="preserve">
+    <value>All Products</value>
+  </data>
+  <data name="Points" xml:space="preserve">
+    <value> Points</value>
+  </data>
+  <data name="AddToQueue" xml:space="preserve">
+    <value>Added to Queue</value>
+  </data>
+  <data name="AccountRole" xml:space="preserve">
+    <value>Your Account Role is user type So You can not access.</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="MessageEmptyQueue" xml:space="preserve">
+    <value>Please Add Product to Queue</value>
+  </data>
+  <data name="URlAbout" xml:space="preserve">
+    <value>Content/AboutUS.html</value>
+  </data>
+  <data name="lblDirections" xml:space="preserve">
+    <value>DIRECTIONS FOR USE:</value>
+  </data>
+  <data name="enterMultiplierPoints" xml:space="preserve">
+    <value>You can only enter points as multiplier of </value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>Amount is required</value>
+  </data>
+  <data name="PdfPath" xml:space="preserve">
+    <value>Link not available.</value>
+  </data>
+  <data name="Label" xml:space="preserve">
+    <value>LABEL</value>
+  </data>
+  <data name="VisitWebpage" xml:space="preserve">
+    <value>VISIT WEBPAGE</value>
+  </data>
+  <data name="Done" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="user" xml:space="preserve">
+    <value>user</value>
+  </data>
+  <data name="RobotoRegular" xml:space="preserve">
+    <value>Roboto-Regular</value>
+  </data>
+  <data name="DroidSerifRegular" xml:space="preserve">
+    <value>DroidSerif-Regular</value>
+  </data>
+  <data name="RobotoItalic" xml:space="preserve">
+    <value>Roboto-Italic</value>
+  </data>
+  <data name="RobotoBold" xml:space="preserve">
+    <value>Roboto-Bold</value>
+  </data>
+  <data name="SegueFromAboutToMyCart" xml:space="preserve">
+    <value>SegueFromAboutToMyCart</value>
+  </data>
+  <data name="SegueFromAboutToMyAccount" xml:space="preserve">
+    <value>SegueFromAboutToMyAccount</value>
+  </data>
+  <data name="SegueFromBookProductsToMyAccount" xml:space="preserve">
+    <value>SegueFromBookProductsToMyAccount</value>
+  </data>
+  <data name="SegueFromBookProductsToRedeemPoints" xml:space="preserve">
+    <value>SegueFromBookProductsToRedeemPoints</value>
+  </data>
+  <data name="SegueFromBookProductsToAbout" xml:space="preserve">
+    <value>SegueFromBookProductsToAbout</value>
+  </data>
+  <data name="SegueFromBookProductsToMyCart" xml:space="preserve">
+    <value>SegueFromBookProductsToMyCart</value>
+  </data>
+  <data name="SegueFromMyCartToBookProducts" xml:space="preserve">
+    <value>SegueFromMyCartToBookProducts</value>
+  </data>
+  <data name="SegueFromDashboardToMyAccount" xml:space="preserve">
+    <value>SegueFromDashboardToMyAccount</value>
+  </data>
+  <data name="SegueFromDashboardToBookProducts" xml:space="preserve">
+    <value>SegueFromDashboardToBookProducts</value>
+  </data>
+  <data name="SegueFromDashBoardToRedeemPoints" xml:space="preserve">
+    <value>SegueFromDashBoardToRedeemPoints</value>
+  </data>
+  <data name="SegueFromDashboardToAbout" xml:space="preserve">
+    <value>SegueFromDashboardToAbout</value>
+  </data>
+  <data name="SegueFromDashboardToMyCart" xml:space="preserve">
+    <value>SegueFromDashboardToMyCart</value>
+  </data>
+  <data name="SignUpSeque" xml:space="preserve">
+    <value>SignUpSeque</value>
+  </data>
+  <data name="SegueFromLoginToForgotPassword" xml:space="preserve">
+    <value>SegueFromLoginToForgotPassword</value>
+  </data>
+  <data name="SegueFromLoginToDashboard" xml:space="preserve">
+    <value>SegueFromLoginToDashboard</value>
+  </data>
+  <data name="SegueFromRedeemPointsToAmyAccount" xml:space="preserve">
+    <value>SegueFromRedeemPointsToAmyAccount</value>
+  </data>
+  <data name="SegueFromRedeemPointsToMyCart" xml:space="preserve">
+    <value>SegueFromRedeemPointsToMyCart</value>
+  </data>
+  <data name="SegueFromRedeemToAbout" xml:space="preserve">
+    <value>SegueFromRedeemToAbout</value>
+  </data>
+  <data name="SegueFromSignUpToCourse" xml:space="preserve">
+    <value>SegueFromSignUpToCourse</value>
+  </data>
+  <data name="SegueFromSignUpToWebView" xml:space="preserve">
+    <value>SegueFromSignUpToWebView</value>
+  </data>
+  <data name="SegueFromAffadavitToTermsConditions" xml:space="preserve">
+    <value>SegueFromAffadavitToTermsConditions</value>
+  </data>
+  <data name="RedeemPointsController" xml:space="preserve">
+    <value>RedeemPointsController</value>
+  </data>
+  <data name="DashboardController" xml:space="preserve">
+    <value>DashboardController</value>
+  </data>
+  <data name="BookProductsController" xml:space="preserve">
+    <value>BookProductsController</value>
+  </data>
+  <data name="LoginController" xml:space="preserve">
+    <value>LoginController</value>
+  </data>
+  <data name="AboutController" xml:space="preserve">
+    <value>AboutController</value>
+  </data>
+  <data name="TermsConditionWebViewController" xml:space="preserve">
+    <value>TermsConditionWebViewController</value>
+  </data>
+  <data name="PDFValue" xml:space="preserve">
+    <value>PDFValue</value>
+  </data>
+  <data name="DistributorId" xml:space="preserve">
+    <value>DistributorId</value>
+  </data>
+  <data name="SignUpDistributrId" xml:space="preserve">
+    <value>SignUpDistributrId</value>
+  </data>
+  <data name="SelectQueryProductList" xml:space="preserve">
+    <value>Select * from ProductListDbModel</value>
+  </data>
+  <data name="SelectQueryCartItemList" xml:space="preserve">
+    <value>Select * from CartItemList</value>
+  </data>
+  <data name="ProductListDbModel" xml:space="preserve">
+    <value>ProductListDbModel</value>
+  </data>
+  <data name="CartItemList" xml:space="preserve">
+    <value>CartItemList</value>
+  </data>
+  <data name="role" xml:space="preserve">
+    <value>role</value>
+  </data>
+  <data name="DeleteQueryProductList" xml:space="preserve">
+    <value>delete from ProductListDbModel</value>
+  </data>
+  <data name="DeleteQueryCartItemList" xml:space="preserve">
+    <value>delete from CartItemList</value>
+  </data>
+  <data name="success" xml:space="preserve">
+    <value>success</value>
+  </data>
+  <data name="token" xml:space="preserve">
+    <value>token</value>
+  </data>
+  <data name="isEmailPreference" xml:space="preserve">
+    <value>isEmailPreference</value>
+  </data>
+  <data name="isNotification" xml:space="preserve">
+    <value>isNotification</value>
+  </data>
+  <data name="userId" xml:space="preserve">
+    <value>userid</value>
+  </data>
+  <data name="USA" xml:space="preserve">
+    <value>USA</value>
+  </data>
+  <data name="canada" xml:space="preserve">
+    <value>canada</value>
+  </data>
+  <data name="CourseName" xml:space="preserve">
+    <value>CourseName</value>
+  </data>
+  <data name="CourseId" xml:space="preserve">
+    <value>CourseId</value>
+  </data>
+  <data name="approved" xml:space="preserve">
+    <value>approved</value>
+  </data>
+  <data name="userName" xml:space="preserve">
+    <value>userName</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>password</value>
+  </data>
+  <data name="IsLogedIn" xml:space="preserve">
+    <value>IsLogedIn</value>
+  </data>
+  <data name="MsgError" xml:space="preserve">
+    <value>error</value>
+  </data>
+  <data name="imgInvisibleEye" xml:space="preserve">
+    <value>imgInvisibleEye</value>
+  </data>
+  <data name="imgVisibleEye" xml:space="preserve">
+    <value>imgVisibleEye</value>
+  </data>
+  <data name="ImgCheckbox" xml:space="preserve">
+    <value>ImgCheckbox</value>
+  </data>
+  <data name="ImgUnCheckbox" xml:space="preserve">
+    <value>ImgUnCheckbox</value>
+  </data>
+  <data name="TermsConditions" xml:space="preserve">
+    <value>https://aquatrols.com/approach/termsandconditions/</value>
+  </data>
+  <data name="Policy" xml:space="preserve">
+    <value>https://aquatrols.com/approach/privacy/</value>
+  </data>
+  <data name="Affidavit1" xml:space="preserve">
+    <value>https://aquatrols.com/approach/termsandconditions/</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>https://aquatrols.com/approach/faq/</value>
+  </data>
+  <data name="Support" xml:space="preserve">
+    <value>https://aquatrols.com/approach/support/</value>
+  </data>
+  <data name="isCheckbox" xml:space="preserve">
+    <value>isCheckbox</value>
+  </data>
+  <data name="pointsPer" xml:space="preserve">
+    <value> points per </value>
+  </data>
+  <data name="at" xml:space="preserve">
+    <value>at </value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="UICategorySelectedValue" xml:space="preserve">
+    <value>UICategorySelectedValue</value>
+  </data>
+  <data name="AboutProductList" xml:space="preserve">
+    <value>AboutProductList</value>
+  </data>
+  <data name="CellCourse" xml:space="preserve">
+    <value>CellCourse</value>
+  </data>
+  <data name="EditGallonProductList" xml:space="preserve">
+    <value>EditGallonProductList</value>
+  </data>
+  <data name="MyCartProductList" xml:space="preserve">
+    <value>MyCartProductList</value>
+  </data>
+  <data name="ProductList" xml:space="preserve">
+    <value>ProductList</value>
+  </data>
+  <data name="ValueApproved" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="result" xml:space="preserve">
+    <value>result:</value>
+  </data>
+  <data name="ToMail" xml:space="preserve">
+    <value>approach@aquatrols.com</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="ErrorRecord" xml:space="preserve">
+    <value>Record not found</value>
+  </data>
+  <data name="ShowCaseMyCart" xml:space="preserve">
+    <value>ShowCaseMyCart</value>
+  </data>
+  <data name="ShowCaseAbout" xml:space="preserve">
+    <value>ShowCaseAbout</value>
+  </data>
+  <data name="notEnoughPoints" xml:space="preserve">
+    <value>You don't have enough points balance</value>
+  </data>
+  <data name="enterValidAmount" xml:space="preserve">
+    <value>Amount is not valid</value>
+  </data>
+  <data name="selectCard" xml:space="preserve">
+    <value>Select Card</value>
+  </data>
+  <data name="enterMultiplierCabelaPoints" xml:space="preserve">
+    <value>You can only enter points as multipliers of 11000</value>
+  </data>
+  <data name="InvalidZip" xml:space="preserve">
+    <value>Zipcode is not valid.</value>
+  </data>
+  <data name="ProductListUser" xml:space="preserve">
+    <value>ProductListUser</value>
+  </data>
+  <data name="SegueFromCourseToAffidavit" xml:space="preserve">
+    <value>SegueFromCourseToAffidavit</value>
+  </data>
+  <data name="pdfReaderUrl" xml:space="preserve">
+    <value>https://docs.google.com/viewer?embedded=true&amp;url=</value>
+  </data>
+  <data name="fbUrl" xml:space="preserve">
+    <value>https://www.facebook.com/Aquatrols/</value>
+  </data>
+  <data name="rssUrl" xml:space="preserve">
+    <value>https://aquatrols.com</value>
+  </data>
+  <data name="twitterUrl" xml:space="preserve">
+    <value>https://twitter.com/aquatrols</value>
+  </data>
+  <data name="youtubeUrl" xml:space="preserve">
+    <value>https://www.youtube.com/user/Aquatrols</value>
+  </data>
+  <data name="instagramUrl" xml:space="preserve">
+    <value>https://www.instagram.com/aquatrols/</value>
+  </data>
+  <data name="InvalidAmount" xml:space="preserve">
+    <value>Invalid quantity</value>
+  </data>
+  <data name="CellDistributor" xml:space="preserve">
+    <value>CellDistributor</value>
+  </data>
+  <data name="lblDetailsProTurf" xml:space="preserve">
+    <value>From sports fields and golf courses to highly managed landscapes, Aquatrols technologies help turfgrass professionals worldwide to conserve water and energy while producing high quality turfgrass. Our products ensure consistency in a variety of conditions and can serve as a strong basis for sustainable turf management practices.</value>
+  </data>
+  <data name="lblDetailsAgriculture" xml:space="preserve">
+    <value>Our unique water management chemistries allow agricultural producers to maximize irrigation efficiency and improve the efficacy of soil-applied chemicals. The result is improved crop productivity using less water and energy, effectively producing “more crop per drop.”</value>
+  </data>
+  <data name="lblDetailsHorticulture" xml:space="preserve">
+    <value>Soilless growing media producers and growers in the greenhouse and nursery industries rely on our unique products to create more desirable growing conditions. Aquatrols media wetting agents help growers improve plant quality, lower costs, and conserve water and other resources from production to point of sale.</value>
+  </data>
+  <data name="isVaildAmount" xml:space="preserve">
+    <value>isVaildAmount</value>
+  </data>
+  <data name="fb" xml:space="preserve">
+    <value>fb://</value>
+  </data>
+  <data name="fbUrl1" xml:space="preserve">
+    <value>fb://profile/106241986066591</value>
+  </data>
+  <data name="rss" xml:space="preserve">
+    <value>rss://</value>
+  </data>
+  <data name="twitter" xml:space="preserve">
+    <value>twitter://</value>
+  </data>
+  <data name="youtube" xml:space="preserve">
+    <value>youtube://</value>
+  </data>
+  <data name="instagram" xml:space="preserve">
+    <value>instagram://</value>
+  </data>
+  <data name="rss1" xml:space="preserve">
+    <value>rss://</value>
+  </data>
+  <data name="twitter1" xml:space="preserve">
+    <value>twitter:///user?screen_name=aquatrols</value>
+  </data>
+  <data name="youtube1" xml:space="preserve">
+    <value>youtube://user/aquatrols</value>
+  </data>
+  <data name="instagram1" xml:space="preserve">
+    <value>instagram://user?username=aquatrols</value>
+  </data>
+  <data name="SignUpUserName" xml:space="preserve">
+    <value>appuser@gmail.com</value>
+  </data>
+  <data name="SignUpPassword" xml:space="preserve">
+    <value>P@ssW0rdAquatrol#</value>
+  </data>
+  <data name="tokenSignUp" xml:space="preserve">
+    <value>tokenSignUp</value>
+  </data>
+  <data name="admin" xml:space="preserve">
+    <value>admin</value>
+  </data>
+  <data name="Unauthorized" xml:space="preserve">
+    <value>Unauthorized access </value>
+  </data>
+  <data name="NotSupported" xml:space="preserve">
+    <value>Not supported </value>
+  </data>
+  <data name="MessageTelephone" xml:space="preserve">
+    <value>Scheme 'tel:' is not supported on this device </value>
+  </data>
+  <data name="Tel" xml:space="preserve">
+    <value>tel:</value>
+  </data>
+  <data name="DistributorName" xml:space="preserve">
+    <value>DistributorName</value>
+  </data>
+  <data name="SegueFromMyQueueToMyAccount" xml:space="preserve">
+    <value>SegueFromMyQueueToMyAccount</value>
+  </data>
+  <data name="MsgMyQueue" xml:space="preserve">
+    <value>Please review and make any changes before continuing. Swipe left or right to delete product.</value>
+  </data>
+  <data name="Comma" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="FirstPAboutUs" xml:space="preserve">
+    <value>FOR MORE THAN 60 YEARS Aquatrols has been the world leader in the development and manufacturing of cutting edge soil surfactants and other specially technologies that improve soil-water-plant interactions.</value>
+  </data>
+  <data name="SecondPAboutUs" xml:space="preserve">
+    <value>Today we offer a portfolio of conservation based solutions focused on three pillars of healthy plant growth and environment stewardship: water management, nutrition conservation, and A.I. distribution and retention.</value>
+  </data>
+  <data name="PurchaseHistory" xml:space="preserve">
+    <value>PurchaseHistory</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="iOS" xml:space="preserve">
+    <value>iOS</value>
+  </data>
+  <data name="DeviceToken" xml:space="preserve">
+    <value>DeviceToken</value>
+  </data>
+  <data name="DeviceTokenSent" xml:space="preserve">
+    <value>device token sent</value>
+  </data>
+  <data name="SignIn" xml:space="preserve">
+    <value>api/Account/Signin?version=iOS</value>
+  </data>
+  <data name="ExceptionhandlingAPI" xml:space="preserve">
+    <value>api/ExceptionHandling/save</value>
+  </data>
+  <data name="PushNotification" xml:space="preserve">
+    <value>api/PushNotification/save</value>
+  </data>
+  <data name="SignUpAPI" xml:space="preserve">
+    <value>api/Account/Signup</value>
+  </data>
+  <data name="SendOtp" xml:space="preserve">
+    <value>api/Account/SendOTP</value>
+  </data>
+  <data name="ResetPassword" xml:space="preserve">
+    <value>api/Account/ResetPassword</value>
+  </data>
+  <data name="UserDetail" xml:space="preserve">
+    <value>api/user/detail/</value>
+  </data>
+  <data name="DistributorListUserWise" xml:space="preserve">
+    <value>api/distributor/list/user/</value>
+  </data>
+  <data name="DistributorList" xml:space="preserve">
+    <value>api/distributor/list</value>
+  </data>
+  <data name="DistinctDistributorList" xml:space="preserve">
+    <value>api/distributor/distinctdistributorlist</value>
+  </data>
+  <data name="NewCourse" xml:space="preserve">
+    <value>api/Courses/Save</value>
+  </data>
+  <data name="MyQueueAPI" xml:space="preserve">
+    <value>api/WishList/save</value>
+  </data>
+  <data name="CourseList" xml:space="preserve">
+    <value>api/Courses/List</value>
+  </data>
+  <data name="Notifications" xml:space="preserve">
+    <value>api/user/Notifications</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>api/account/ChangePassword</value>
+  </data>
+  <data name="ProductListApi" xml:space="preserve">
+    <value>api/Product/list</value>
+  </data>
+  <data name="ProductBook" xml:space="preserve">
+    <value>api/Product/Book</value>
+  </data>
+  <data name="RedeemAPI" xml:space="preserve">
+    <value>api/LoyaltyPoints/Redeem</value>
+  </data>
+  <data name="GetAccessToken" xml:space="preserve">
+    <value>api/Account/GetAccessToken</value>
+  </data>
+  <data name="BookingDetail" xml:space="preserve">
+    <value>api/Product/BookingDetail/</value>
+  </data>
+  <data name="WishListAPI" xml:space="preserve">
+    <value>api/WishList/list/</value>
+  </data>
+  <data name="WishListItemCountAPI" xml:space="preserve">
+    <value>api/WishList/ItemCount/</value>
+  </data>
+  <data name="ValidateOTP" xml:space="preserve">
+    <value>api/Account/ValidateOTP</value>
+  </data>
+  <data name="ClearQueueAPI" xml:space="preserve">
+    <value>api/WishList/ClearQueue/</value>
+  </data>
+  <data name="DeleteSelectedItemAPI" xml:space="preserve">
+    <value>api/WishList/Delete/</value>
+  </data>
+  <data name="TmCourseListAPI" xml:space="preserve">
+    <value>api/TmCourse/GetCourses/</value>
+  </data>
+  <data name="TmSuperIntendentListAPI" xml:space="preserve">
+    <value>api/TmCourse/GetAllTmRegionUsers/</value>
+  </data>
+  <data name="TmCourseResultAPI" xml:space="preserve">
+    <value>api/TmCourse/GetCourseSearchResult/</value>
+  </data>
+  <data name="TmSuperIntendentResultAPI" xml:space="preserve">
+    <value>api/TmCourse/GetUserSearchResult/</value>
+  </data>
+  <data name="TmStateSearchAPI" xml:space="preserve">
+    <value>api/TmDistributorNew/GetAllStates/</value>
+  </data>
+  <data name="TmDistributorSearchAPI" xml:space="preserve">
+    <value>api/TmDistributorNew/GetTmDistributors/</value>
+  </data>
+  <data name="TmDistributorSearchResultAPI" xml:space="preserve">
+    <value>api/TmDistributorNew/GetDistributorSearchResult/
+        </value>
+  </data>
+  <data name="AqueductFlex" xml:space="preserve">
+    <value>Aqueduct Flex</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="Province" xml:space="preserve">
+    <value>Province</value>
+  </data>
+  <data name="SpaceManage" xml:space="preserve">
+    <value>%20</value>
+  </data>
+  <data name="isTermsConditions" xml:space="preserve">
+    <value>isTermsConditions</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>Aquatrols Approach</value>
+  </data>
+  <data name="AppId" xml:space="preserve">
+    <value>com.approach.ios</value>
+  </data>
+  <data name="TrackingId" xml:space="preserve">
+    <value>UA-126579020-1</value>
+  </data>
+  <data name="AppVersion" xml:space="preserve">
+    <value>CFBundleShortVersionString</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="Programs" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="MyQueue" xml:space="preserve">
+    <value>My Queue</value>
+  </data>
+  <data name="MyAccount" xml:space="preserve">
+    <value>My Account</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Redeem" xml:space="preserve">
+    <value>Redeem</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>SignUp</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>Forgot Password</value>
+  </data>
+  <data name="AddCourse" xml:space="preserve">
+    <value>AddCourse</value>
+  </data>
+  <data name="Affidavit" xml:space="preserve">
+    <value>Affidavit</value>
+  </data>
+  <data name="GiftCard" xml:space="preserve">
+    <value>GiftCard</value>
+  </data>
+  <data name="GiftCardUser" xml:space="preserve">
+    <value>GiftCardUser</value>
+  </data>
+  <data name="PointsRedeem" xml:space="preserve">
+    <value> Points = $</value>
+  </data>
+  <data name="RewardItemList" xml:space="preserve">
+    <value>api/RewardItem/list</value>
+  </data>
+  <data name="BalancePoints" xml:space="preserve">
+    <value>BalancePoints</value>
+  </data>
+  <data name="EOP" xml:space="preserve">
+    <value>EOP</value>
+  </data>
+  <data name="LinkData" xml:space="preserve">
+    <value>linkData</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="MyAccountController" xml:space="preserve">
+    <value>MyAccountController</value>
+  </data>
+  <data name="deepLink" xml:space="preserve">
+    <value>deepLink</value>
+  </data>
+  <data name="SignUpController" xml:space="preserve">
+    <value>SignUpController</value>
+  </data>
+  <data name="isTerritory" xml:space="preserve">
+    <value>IsTerritory</value>
+  </data>
+  <data name="TerritoryManager" xml:space="preserve">
+    <value>TerritoryManager</value>
+  </data>
+  <data name="TmCourseCell" xml:space="preserve">
+    <value>TmCourseCell</value>
+  </data>
+  <data name="TmSuperIntendentCell" xml:space="preserve">
+    <value>TmSuperIntendentCell</value>
+  </data>
+  <data name="IdnTmCourseSearchResult" xml:space="preserve">
+    <value>IdnTmCourseSearchResult</value>
+  </data>
+  <data name="TmDistributorID" xml:space="preserve">
+    <value>TmDistributorID</value>
+  </data>
+  <data name="TmDistributorName" xml:space="preserve">
+    <value>TmDistributorName</value>
+  </data>
+  <data name="TmcountryName" xml:space="preserve">
+    <value>TmcountryName</value>
+  </data>
+  <data name="TmStateName" xml:space="preserve">
+    <value>TmStateName</value>
+  </data>
+  <data name="TmState" xml:space="preserve">
+    <value>State not found</value>
+  </data>
+  <data name="SelectState" xml:space="preserve">
+    <value>Select State</value>
+  </data>
+  <data name="SelectDistributor" xml:space="preserve">
+    <value>Select Distributor</value>
+  </data>
+  <data name="iPad" xml:space="preserve">
+    <value>iPad</value>
+  </data>
+  <data name="RequireSuperintendant" xml:space="preserve">
+    <value>Superintendant is required.</value>
+  </data>
+  <data name="itunesUrl" xml:space="preserve">
+    <value>http://itunes.apple.com/lookup?bundleId=com.approach.ios</value>
+  </data>
+  <data name="VersionTitle" xml:space="preserve">
+    <value>Update Available</value>
+  </data>
+  <data name="VersionMessage" xml:space="preserve">
+    <value>An update for the application is required, please download latest version.</value>
+  </data>
+  <data name="CurrentVersion" xml:space="preserve">
+    <value>CurrentVersion</value>
+  </data>
+  <data name="AppStoreAppVersion" xml:space="preserve">
+    <value>AppStoreAppVersion</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="StoreUrl" xml:space="preserve">
+    <value>https://itunes.apple.com/us/app/aquatrols-approach/id1432575593?mt=8</value>
+  </data>
+  <data name="resultCount" xml:space="preserve">
+    <value>resultCount</value>
+  </data>
+  <data name="ViewDidLoad" xml:space="preserve">
+    <value>ViewDidLoad</value>
+  </data>
+  <data name="SetFonts" xml:space="preserve">
+    <value>SetFonts</value>
+  </data>
+  <data name="SetUISize" xml:space="preserve">
+    <value>SetUISize</value>
+  </data>
+  <data name="HitUserInfAPI" xml:space="preserve">
+    <value>HitUserInfAPI</value>
+  </data>
+  <data name="HitNotificationAPI" xml:space="preserve">
+    <value>HitNotificationAPI</value>
+  </data>
+  <data name="HitPurchaseHistoryAPI" xml:space="preserve">
+    <value>HitPurchaseHistoryAPI</value>
+  </data>
+  <data name="BtnSendEmail_TouchUpInside" xml:space="preserve">
+    <value>BtnSendEmail_TouchUpInside</value>
+  </data>
+  <data name="ChangePasswordMyAccount" xml:space="preserve">
+    <value>ChangePasswordMyAccount</value>
+  </data>
+  <data name="BtnSubmit_TouchUpInside" xml:space="preserve">
+    <value>BtnSubmit_TouchUpInside</value>
+  </data>
+  <data name="CheckBoxEmailClick" xml:space="preserve">
+    <value>CheckBoxEmailClick</value>
+  </data>
+  <data name="CheckBoxNotificationClick" xml:space="preserve">
+    <value>CheckBoxNotificationClick</value>
+  </data>
+  <data name="LblAccountSummaryClick" xml:space="preserve">
+    <value>LblAccountSummaryClick</value>
+  </data>
+  <data name="LblInformationPasswordClick" xml:space="preserve">
+    <value>LblInformationPasswordClick</value>
+  </data>
+  <data name="LblNotificationsClick" xml:space="preserve">
+    <value>LblNotificationsClick</value>
+  </data>
+  <data name="LblPurchaseHistoryClick" xml:space="preserve">
+    <value>LblPurchaseHistoryClick</value>
+  </data>
+  <data name="PointsEarnedInfoClick" xml:space="preserve">
+    <value>PointsEarnedInfoClick</value>
+  </data>
+  <data name="PointsRedeemedInfoClick" xml:space="preserve">
+    <value>PointsRedeemedInfoClick</value>
+  </data>
+  <data name="PointsBalancInfoClick" xml:space="preserve">
+    <value>PointsBalancInfoClick</value>
+  </data>
+  <data name="CurrentPasswordEyeClick" xml:space="preserve">
+    <value>CurrentPasswordEyeClick</value>
+  </data>
+  <data name="ChangePasswordEyeClick" xml:space="preserve">
+    <value>ChangePasswordEyeClick</value>
+  </data>
+  <data name="ConfirmPasswordEyeClick" xml:space="preserve">
+    <value>ConfirmPasswordEyeClick</value>
+  </data>
+  <data name="setLogoSize" xml:space="preserve">
+    <value>setLogoSize</value>
+  </data>
+  <data name="OTP" xml:space="preserve">
+    <value>OTP</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="ViewWillAppear" xml:space="preserve">
+    <value>ViewWillAppear</value>
+  </data>
+  <data name="TermsConditionWebView" xml:space="preserve">
+    <value>TermsConditionWebView</value>
+  </data>
+  <data name="TmCourseResult" xml:space="preserve">
+    <value>TmCourseResult</value>
+  </data>
+  <data name="TmCourseSearch" xml:space="preserve">
+    <value>TmCourseSearch</value>
+  </data>
+  <data name="TmDistributorResult" xml:space="preserve">
+    <value>TmDistributorResult</value>
+  </data>
+  <data name="TmDistributorSearch" xml:space="preserve">
+    <value>TmDistributorSearch</value>
+  </data>
+  <data name="TmSnapresult" xml:space="preserve">
+    <value>TmSnapresult</value>
+  </data>
+  <data name="TmViewHome" xml:space="preserve">
+    <value>TmViewHome</value>
+  </data>
+  <data name="WebView" xml:space="preserve">
+    <value>WebView</value>
+  </data>
+  <data name="UpdateCell" xml:space="preserve">
+    <value>UpdateCell</value>
+  </data>
+  <data name="Exception" xml:space="preserve">
+    <value>Exception</value>
+  </data>
+  <data name="ProductDetailViewScrolling" xml:space="preserve">
+    <value>ProductDetailViewScrolling</value>
+  </data>
+  <data name="HitWishListItemCountAPI" xml:space="preserve">
+    <value>HitWishListItemCountAPI</value>
+  </data>
+  <data name="HitProductListAPI" xml:space="preserve">
+    <value>HitProductListAPI</value>
+  </data>
+  <data name="AllProductsList" xml:space="preserve">
+    <value>AllProductsList</value>
+  </data>
+  <data name="ProductDetail" xml:space="preserve">
+    <value>ProductDetail</value>
+  </data>
+  <data name="MarketPicker" xml:space="preserve">
+    <value>MarketPicker</value>
+  </data>
+  <data name="OpenEmail" xml:space="preserve">
+    <value>OpenEmail</value>
+  </data>
+  <data name="OpenCall" xml:space="preserve">
+    <value>OpenCall</value>
+  </data>
+  <data name="HitDistributorsInfoAPI" xml:space="preserve">
+    <value>HitDistributorsInfoAPI</value>
+  </data>
+  <data name="HitProductCheckoutAPI" xml:space="preserve">
+    <value>HitProductCheckoutAPI</value>
+  </data>
+  <data name="HitClearQueueAPI" xml:space="preserve">
+    <value>HitClearQueueAPI</value>
+  </data>
+  <data name="GetProductCheckoutData" xml:space="preserve">
+    <value>GetProductCheckoutData</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="GetDataProduct" xml:space="preserve">
+    <value>GetDataProduct</value>
+  </data>
+  <data name="GetData" xml:space="preserve">
+    <value>GetData</value>
+  </data>
+  <data name="PrepareForSegue" xml:space="preserve">
+    <value>PrepareForSegue</value>
+  </data>
+  <data name="GetMyCartProductList" xml:space="preserve">
+    <value>GetMyCartProductList</value>
+  </data>
+  <data name="AddMyQueue" xml:space="preserve">
+    <value>AddMyQueue</value>
+  </data>
+  <data name="DistributorPicker" xml:space="preserve">
+    <value>DistributorPicker</value>
+  </data>
+  <data name="MoveScrollViewToOpenKeyboard" xml:space="preserve">
+    <value>MoveScrollViewToOpenKeyboard</value>
+  </data>
+  <data name="MoveScrollViewToHideKeyboard" xml:space="preserve">
+    <value>MoveScrollViewToHideKeyboard</value>
+  </data>
+  <data name="BookProductsClick" xml:space="preserve">
+    <value>BookProductsClick</value>
+  </data>
+  <data name="MyCartClick" xml:space="preserve">
+    <value>MyCartClick</value>
+  </data>
+  <data name="GetRequestTokenForSignUp" xml:space="preserve">
+    <value>GetRequestTokenForSignUp</value>
+  </data>
+  <data name="StatePicker" xml:space="preserve">
+    <value>StatePicker</value>
+  </data>
+  <data name="CountryPicker" xml:space="preserve">
+    <value>CountryPicker</value>
+  </data>
+  <data name="txtCountry_EditingChanged" xml:space="preserve">
+    <value>txtCountry_EditingChanged</value>
+  </data>
+  <data name="BtnAdd_TouchUpInside" xml:space="preserve">
+    <value>BtnAdd_TouchUpInside</value>
+  </data>
+  <data name="SendDeviceTokenToServer" xml:space="preserve">
+    <value>SendDeviceTokenToServer</value>
+  </data>
+  <data name="SegueFromDashboardToTmViewHome" xml:space="preserve">
+    <value>SegueFromDashboardToTmViewHome</value>
+  </data>
+  <data name="ImgMyCartClick" xml:space="preserve">
+    <value>ImgMyCartClick</value>
+  </data>
+  <data name="PasswordResetClick" xml:space="preserve">
+    <value>PasswordResetClick</value>
+  </data>
+  <data name="ConfirmPasswordResetClick" xml:space="preserve">
+    <value>ConfirmPasswordResetClick</value>
+  </data>
+  <data name="SetImagesSize" xml:space="preserve">
+    <value>SetImagesSize</value>
+  </data>
+  <data name="PasswordImgClick" xml:space="preserve">
+    <value>PasswordImgClick</value>
+  </data>
+  <data name="HideOrShowCaseView" xml:space="preserve">
+    <value>HideOrShowCaseView</value>
+  </data>
+  <data name="HitWishListDeleteAPI" xml:space="preserve">
+    <value>HitWishListDeleteAPI</value>
+  </data>
+  <data name="UpdateToQueue" xml:space="preserve">
+    <value>UpdateToQueue</value>
+  </data>
+  <data name="MyCart" xml:space="preserve">
+    <value>MyCart</value>
+  </data>
+  <data name="RefreshProductList" xml:space="preserve">
+    <value>RefreshProductList</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="HideShowUIBasedOnUser" xml:space="preserve">
+    <value>HideShowUIBasedOnUser</value>
+  </data>
+  <data name="HitRedeemAPI" xml:space="preserve">
+    <value>HitRedeemAPI</value>
+  </data>
+  <data name="HitRewardItemListAPI" xml:space="preserve">
+    <value>HitRewardItemListAPI</value>
+  </data>
+  <data name="BindDataGiftCard" xml:space="preserve">
+    <value>BindDataGiftCard</value>
+  </data>
+  <data name="RedeemViewClick" xml:space="preserve">
+    <value>RedeemViewClick</value>
+  </data>
+  <data name="HitCourseNameListAPI" xml:space="preserve">
+    <value>HitCourseNameListAPI</value>
+  </data>
+  <data name="HitAllDistributorListAPI" xml:space="preserve">
+    <value>HitAllDistributorListAPI</value>
+  </data>
+  <data name="SetUILblCourseAddress" xml:space="preserve">
+    <value>SetUILblCourseAddress</value>
+  </data>
+  <data name="txtPhoneNumber_EditingChanged" xml:space="preserve">
+    <value>txtPhoneNumber_EditingChanged</value>
+  </data>
+  <data name="txtFirstname_EditingChanged" xml:space="preserve">
+    <value>txtFirstname_EditingChanged</value>
+  </data>
+  <data name="txtLastName_EditingChanged" xml:space="preserve">
+    <value>txtLastName_EditingChanged</value>
+  </data>
+  <data name="txtCourseName_Changed" xml:space="preserve">
+    <value>txtCourseName_Changed</value>
+  </data>
+  <data name="HandleOnRowSelect" xml:space="preserve">
+    <value>HandleOnRowSelect</value>
+  </data>
+  <data name="txtDistributorName_Changed" xml:space="preserve">
+    <value>txtDistributorName_Changed</value>
+  </data>
+  <data name="HandleOnRowSelected" xml:space="preserve">
+    <value>HandleOnRowSelected</value>
+  </data>
+  <data name="MoveScrollView" xml:space="preserve">
+    <value>MoveScrollView</value>
+  </data>
+  <data name="PasswordSignUpImgClick" xml:space="preserve">
+    <value>PasswordSignUpImgClick</value>
+  </data>
+  <data name="ConfirmPasswordSignUpImgClick" xml:space="preserve">
+    <value>ConfirmPasswordSignUpImgClick</value>
+  </data>
+  <data name="WebViewTerms" xml:space="preserve">
+    <value>WebViewTerms</value>
+  </data>
+  <data name="CallTmCourseResultResultAPI" xml:space="preserve">
+    <value>CallTmCourseResultResultAPI</value>
+  </data>
+  <data name="CallTmSuperintendentResultResultAPI" xml:space="preserve">
+    <value>CallTmSuperintendentResultResultAPI</value>
+  </data>
+  <data name="SeguefromTmCourseSearchToTmCourseResult" xml:space="preserve">
+    <value>SeguefromTmCourseSearchToTmCourseResult</value>
+  </data>
+  <data name="BtnCourseSearch_TouchUpInside" xml:space="preserve">
+    <value>BtnCourseSearch_TouchUpInside</value>
+  </data>
+  <data name="BtnSuperIntendantSearch_TouchUpInside" xml:space="preserve">
+    <value>BtnSuperIntendantSearch_TouchUpInside</value>
+  </data>
+  <data name="GetAllTmSuperIntendentList" xml:space="preserve">
+    <value>GetAllTmSuperIntendentList</value>
+  </data>
+  <data name="GetAllTmCourseList" xml:space="preserve">
+    <value>GetAllTmCourseList</value>
+  </data>
+  <data name="TxtTmSuperIntendent_TextChanged" xml:space="preserve">
+    <value>TxtTmSuperIntendent_TextChanged</value>
+  </data>
+  <data name="TxtTmCourse_textChanged" xml:space="preserve">
+    <value>TxtTmCourse_textChanged</value>
+  </data>
+  <data name="HandleOnCourseRowSelect" xml:space="preserve">
+    <value>HandleOnCourseRowSelect</value>
+  </data>
+  <data name="GetDistributorResultData" xml:space="preserve">
+    <value>GetDistributorResultData</value>
+  </data>
+  <data name="InternetError" xml:space="preserve">
+    <value>Internal server error, Please try again.</value>
+  </data>
+  <data name="AttachFileFromThePath" xml:space="preserve">
+    <value>AttachFileFromThePath</value>
+  </data>
+  <data name="GetTmStateList" xml:space="preserve">
+    <value>GetTmStateList</value>
+  </data>
+  <data name="GetTmDistributorListDetail" xml:space="preserve">
+    <value>GetTmDistributorListDetail</value>
+  </data>
+  <data name="BindTmStatePicker" xml:space="preserve">
+    <value>BindTmStatePicker</value>
+  </data>
+  <data name="BindTmDistributorPicker" xml:space="preserve">
+    <value>BindTmDistributorPicker</value>
+  </data>
+  <data name="SegueFromTmDistributorToDistributorResult" xml:space="preserve">
+    <value>SegueFromTmDistributorToDistributorResult</value>
+  </data>
+  <data name="BtnSearch_TouchUpInside" xml:space="preserve">
+    <value>BtnSearch_TouchUpInside</value>
+  </data>
+  <data name="GetTmSnapShotResultCountData" xml:space="preserve">
+    <value>GetTmSnapShotResultCountData</value>
+  </data>
+  <data name="GetProductCommtPerDistributor" xml:space="preserve">
+    <value>GetProductCommtPerDistributor</value>
+  </data>
+  <data name="GetTotalGallonPerLiterCommit" xml:space="preserve">
+    <value>GetTotalGallonPerLiterCommit</value>
+  </data>
+  <data name="GetFilefromServer" xml:space="preserve">
+    <value>GetFilefromServer</value>
+  </data>
+  <data name="SeguefromTmhomeToCourseSearch" xml:space="preserve">
+    <value>SeguefromTmhomeToCourseSearch</value>
+  </data>
+  <data name="TmSeguefromDistributorToDistributorSearch" xml:space="preserve">
+    <value>TmSeguefromDistributorToDistributorSearch</value>
+  </data>
+  <data name="SeguefromTmSnapShoptoSnapShotScreen" xml:space="preserve">
+    <value>SeguefromTmSnapShoptoSnapShotScreen</value>
+  </data>
+  <data name="WebViewAffadavit" xml:space="preserve">
+    <value>WebViewAffadavit</value>
+  </data>
+  <data name="HitSignUpAPI" xml:space="preserve">
+    <value>HitSignUpAPI</value>
+  </data>
+  <data name="CustCellAboutProductList" xml:space="preserve">
+    <value>CustCellAboutProductList</value>
+  </data>
+  <data name="CustCellCoursename" xml:space="preserve">
+    <value>CustCellCoursename</value>
+  </data>
+  <data name="CustCellDistributorList" xml:space="preserve">
+    <value>CustCellDistributorList</value>
+  </data>
+  <data name="CustCellDistributorResult" xml:space="preserve">
+    <value>CustCellDistributorResult</value>
+  </data>
+  <data name="CustCellDistributorResultInner" xml:space="preserve">
+    <value>CustCellDistributorResultInner</value>
+  </data>
+  <data name="CustCellEditGallonProductList" xml:space="preserve">
+    <value>CustCellEditGallonProductList</value>
+  </data>
+  <data name="CustCellGiftCard" xml:space="preserve">
+    <value>CustCellGiftCard</value>
+  </data>
+  <data name="txtAmount_EditingChanged" xml:space="preserve">
+    <value>txtAmount_EditingChanged</value>
+  </data>
+  <data name="BtnRedeem_TouchUpInside" xml:space="preserve">
+    <value>BtnRedeem_TouchUpInside</value>
+  </data>
+  <data name="CustCellGiftCardUser" xml:space="preserve">
+    <value>CustCellGiftCardUser</value>
+  </data>
+  <data name="CustCellInnerProduct" xml:space="preserve">
+    <value>CustCellInnerProduct</value>
+  </data>
+  <data name="CustCellMyCartProductList" xml:space="preserve">
+    <value>CustCellMyCartProductList</value>
+  </data>
+  <data name="txtMyCartGallons_DidEndEditing" xml:space="preserve">
+    <value>txtMyCartGallons_DidEndEditing</value>
+  </data>
+  <data name="CustCellProdCommitmentPerDist" xml:space="preserve">
+    <value>CustCellProdCommitmentPerDist</value>
+  </data>
+  <data name="CustCellProductlist" xml:space="preserve">
+    <value>CustCellProductlist</value>
+  </data>
+  <data name="btnCommit_TouchUpInside" xml:space="preserve">
+    <value>btnCommit_TouchUpInside</value>
+  </data>
+  <data name="btnAddToCart_TouchUpInside" xml:space="preserve">
+    <value>btnAddToCart_TouchUpInside</value>
+  </data>
+  <data name="CustCellProductListUser" xml:space="preserve">
+    <value>CustCellProductListUser</value>
+  </data>
+  <data name="CustCellPurchaseHistory" xml:space="preserve">
+    <value>CustCellPurchaseHistory</value>
+  </data>
+  <data name="CustCellSnapShotSignupCounts" xml:space="preserve">
+    <value>CustCellSnapShotSignupCounts</value>
+  </data>
+  <data name="CustCellTmCourseName" xml:space="preserve">
+    <value>CustCellTmCourseName</value>
+  </data>
+  <data name="CustCellTmCourseResultSearch" xml:space="preserve">
+    <value>CustCellTmCourseResultSearch</value>
+  </data>
+  <data name="CustCellTmSuperIntendent" xml:space="preserve">
+    <value>CustCellTmSuperIntendent</value>
+  </data>
+  <data name="CustCellTotGallon" xml:space="preserve">
+    <value>CustCellTotGallon</value>
+  </data>
+  <data name="GetSnapshotExcelAPI" xml:space="preserve">
+    <value>api/TmSnapshot/GetSnapshotExcel</value>
+  </data>
+  <data name="ExportToExcelAPI" xml:space="preserve">
+    <value>api/TmDistributorNew/ExportToExcelAsync</value>
+  </data>
+  <data name="GetSignupCommitmentCountAPI" xml:space="preserve">
+    <value>api/TmSnapshot/GetSignUpCommitmentCount/</value>
+  </data>
+  <data name="GetCommitmentPerDistributorAPI" xml:space="preserve">
+    <value>api/TmSnapshot/GetCommitmentPerDistributor/</value>
+  </data>
+  <data name="GetTotalQuantityCommitedAPI" xml:space="preserve">
+    <value>api/TmSnapshot/GetTotalQuantityCommited/</value>
+  </data>
+  <data name="AppDelegate" xml:space="preserve">
+    <value>AppDelegate</value>
+  </data>
+  <data name="FinishedLaunching" xml:space="preserve">
+    <value>FinishedLaunching</value>
+  </data>
+  <data name="DisplayAlert" xml:space="preserve">
+    <value>DisplayAlert</value>
+  </data>
+  <data name="WillEnterForeground" xml:space="preserve">
+    <value>WillEnterForeground</value>
+  </data>
+  <data name="ConnectFCM" xml:space="preserve">
+    <value>ConnectFCM</value>
+  </data>
+  <data name="alert" xml:space="preserve">
+    <value>alert</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>title</value>
+  </data>
+  <data name="body" xml:space="preserve">
+    <value>body</value>
+  </data>
+  <data name="aps" xml:space="preserve">
+    <value>aps</value>
+  </data>
+  <data name="errorOccured" xml:space="preserve">
+    <value>error occured</value>
+  </data>
+  <data name="connectSuccess" xml:space="preserve">
+    <value>connect success</value>
+  </data>
+  <data name="topics" xml:space="preserve">
+    <value>/topics/all</value>
+  </data>
+  <data name="GetHeightForRow" xml:space="preserve">
+    <value>GetHeightForRow</value>
+  </data>
+  <data name="TableViewAboutProductList" xml:space="preserve">
+    <value>TableViewAboutProductList</value>
+  </data>
+  <data name="tmCourseSearchResultCell" xml:space="preserve">
+    <value>tmCourseSearchResultCell</value>
+  </data>
+  <data name="TableTmCourseSearchResult" xml:space="preserve">
+    <value>TableTmCourseSearchResult</value>
+  </data>
+  <data name="TableViewDistributorResult" xml:space="preserve">
+    <value>TableViewDistributorResult</value>
+  </data>
+  <data name="TableViewEditGallonProductList" xml:space="preserve">
+    <value>TableViewEditGallonProductList</value>
+  </data>
+  <data name="TableViewGiftCard" xml:space="preserve">
+    <value>TableViewGiftCard</value>
+  </data>
+  <data name="TableViewGiftCardUser" xml:space="preserve">
+    <value>TableViewGiftCardUser</value>
+  </data>
+  <data name="TableViewMyCartProductList" xml:space="preserve">
+    <value>TableViewMyCartProductList</value>
+  </data>
+  <data name="IdnPrdCommimentPerDistributor" xml:space="preserve">
+    <value>IdnPrdCommimentPerDistributor</value>
+  </data>
+  <data name="TableViewProductList" xml:space="preserve">
+    <value>TableViewProductList</value>
+  </data>
+  <data name="TableViewProductListUser" xml:space="preserve">
+    <value>TableViewProductListUser</value>
+  </data>
+  <data name="tmDistributorResultInner" xml:space="preserve">
+    <value>tmDistributorResultInner</value>
+  </data>
+  <data name="InnerProductCell" xml:space="preserve">
+    <value>InnerProductCell</value>
+  </data>
+  <data name="IdnCellGallonPerLiter" xml:space="preserve">
+    <value>IdnCellGallonPerLiter</value>
+  </data>
+</root>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <RelativeLayout
+        android:id="@+id/rllContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:elevation="4dp"
+        android:background="@color/appBackground">
+        <ImageView
+            android:src="@drawable/back"
+            android:layout_width="@dimen/backIconwidth"
+            android:layout_height="@dimen/backIconHeight"
+            android:id="@+id/imgBack"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true" />
+        <TextView
+            android:id="@+id/txtHeading"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/QueueMessageTextsize"
+            android:textColor="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/terms"
+            android:tag="Heading"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="@dimen/InnerContentPadding"
+        android:paddingRight="@dimen/InnerContentPadding"
+        android:layout_weight="0.7">
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.1"
+        android:paddingLeft="@dimen/InnerContentPadding"
+        android:paddingRight="@dimen/InnerContentPadding"
+        android:weightSum="1">
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="match_parent"
+            android:id="@+id/chkAgree"
+            android:gravity="center_vertical"
+            android:theme="@style/MyCheckBox" />
+        <TextView
+            android:id="@+id/txtTerms"
+            android:text="@string/termsandcondition"
+            android:layout_width="0dp"
+            android:layout_weight="0.9"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:weightSum="1"
+        android:paddingLeft="@dimen/InnerContentPadding"
+        android:paddingRight="@dimen/InnerContentPadding"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnReject"
+            android:layout_marginTop="@dimen/InnerLabelAboutusPageSize"
+            android:layout_marginBottom="@dimen/InnerLabelAboutusPageSize"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="@dimen/ButtonHeight"
+            android:layout_gravity="left"
+            android:textColor="#FFF"
+            android:textSize="@dimen/InnerLabelHeadersize"
+            android:letterSpacing=".2"
+            android:text="Cancel"
+            android:padding="@dimen/RecycleBordermargin"
+            android:background="#005A82" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/view1"
+            android:layout_weight="0.4"
+            android:layout_marginLeft="@dimen/InnercontentMargin"
+            android:layout_marginRight="@dimen/InnercontentMargin" />
+        <Button
+            android:id="@+id/btnAccept"
+            android:layout_marginTop="@dimen/InnerLabelAboutusPageSize"
+            android:layout_marginBottom="@dimen/InnerLabelAboutusPageSize"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="@dimen/ButtonHeight"
+            android:layout_gravity="left"
+            android:textColor="#FFF"
+            android:textSize="@dimen/InnerLabelHeadersize"
+            android:letterSpacing=".2"
+            android:text="Accept"
+            android:padding="@dimen/RecycleBordermargin"
+            android:background="#005A82" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,65 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+            android:id="@+id/rlHeader"
+            android:background="@color/appBackground"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/HeaderHeight"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="@dimen/InnerContentPadding"
+            android:paddingRight="@dimen/InnerContentPadding">
+            <ImageView
+                android:src="@drawable/AquatrolsLogoWhite"
+                android:layout_width="@dimen/socialImageheight"
+                android:layout_height="@dimen/socialImageheight"
+                android:id="@+id/imgLogo"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/TextMessagePadding" />
+            <TextView
+                android:id="@+id/txtHeading"
+                android:layout_width="@dimen/HEadingTextviewHeight"
+                android:layout_height="@dimen/HeaderHeight"
+                android:textSize="@dimen/QueueMessageTextsize"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:tag="Heading" />
+            <ImageView
+                android:src="@drawable/iconMenu"
+                android:layout_width="@dimen/refreshIconSize"
+                android:layout_height="@dimen/refreshIconSize"
+                android:id="@+id/imgMenu"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+            <ImageView
+                android:visibility="gone"
+                android:src="@drawable/refresh24"
+                android:layout_width="@dimen/refreshIconSize"
+                android:layout_height="@dimen/refreshIconSize"
+                android:id="@+id/imgRefresh"
+                android:layout_toLeftOf="@+id/imgMenu"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/InnercontentMargin" />                      
+        </RelativeLayout>
+ <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="@dimen/InnerContentPadding"
+        android:paddingRight="@dimen/InnerContentPadding"
+        android:layout_weight="0.7">
+        <!--<android.webkit.WebView
+            android:id="@id/webviewLoggedInUser"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />-->
+        <android.webkit.WebView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"   
+            android:layout_marginTop="@dimen/RecycleBordermargin"
+            android:id="@+id/webView1" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/InnerContentPadding"
+    android:paddingRight="@dimen/InnerContentPadding">
+    <TextView
+		android:id="@+id/txtChoose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+		android:layout_marginTop="@dimen/InnerContentPadding"
+        android:textSize="@dimen/InnerLabelExtraLongsize"
+        android:gravity="center_vertical"
+        android:text="Choose your market:" />
+    <Spinner
+        android:id="@+id/spinnerMarket"
+	    android:layout_below="@+id/txtChoose"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ButtonHeight"
+        android:layout_marginBottom="@dimen/InnercontentMargin"
+        android:spinnerMode="dropdown" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lvProductsIcon"
+		android:layout_below="@+id/spinnerMarket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/menuIconheight" />
+</RelativeLayout>

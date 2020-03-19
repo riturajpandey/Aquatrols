@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/RootLayout"
+    android:background="@color/appBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rllHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/HeaderHeight">
+        <ImageView
+            android:src="@drawable/back"
+            android:layout_width="@dimen/backIconwidth"
+            android:layout_height="@dimen/backIconHeight"
+            android:id="@+id/imgBack"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:id="@+id/txtHeading"
+            android:text="@string/MyAccount"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:tag="Heading"
+            android:layout_centerInParent="true" />
+        <ImageView
+            android:src="@drawable/menu"
+            android:layout_width="@dimen/menuIconwidth"
+            android:layout_height="@dimen/menuIconheight"
+            android:id="@+id/imgMenu"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:id="@+id/Contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:padding="10dp"
+                android:background="@color/white"
+                android:id="@+id/llTopContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="3">
+                <LinearLayout
+                    android:id="@+id/llName"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bottomborder"
+                    android:padding="@dimen/InnerContentPadding">
+                    <TextView
+                        android:id="@+id/txtName"
+                        android:text="Name"
+                        android:textSize="@dimen/InnerLabelTextsize"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" />
+                    <TextView
+                        android:id="@+id/txtNamevalue"
+                        android:text="Joseph Gillespie"
+                        android:layout_width="0dp"
+                        android:textSize="@dimen/InnerLabelTextsize"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llCourse"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bottomborder"
+                    android:padding="@dimen/InnerContentPadding">
+                    <TextView
+                        android:id="@+id/txtCourse"
+                        android:text="Course"
+                        android:layout_width="0dp"
+                        android:textSize="@dimen/InnerLabelTextsize"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" />
+                    <TextView
+                        android:id="@+id/txtCoursevalue"
+                        android:textSize="@dimen/InnerLabelTextsize"
+                        android:text="Mercer Point Country Club"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bottomborder"
+                    android:padding="@dimen/InnerContentPadding">
+                    <TextView
+                        android:id="@+id/txtStatus"
+                        android:text="Status"
+                        android:textSize="@dimen/InnerLabelTextsize"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" />
+                    <TextView
+                        android:id="@+id/txtStatusvalue"
+                        android:text="Steward Level"
+                        android:layout_width="0dp"
+                        android:textSize="@dimen/InnerLabelTextsize"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:id="@+id/viewFirst"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/appBackground" />
+            <LinearLayout
+                android:id="@+id/llSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/InnerContentPadding"
+                android:background="@color/white">
+                <RelativeLayout
+                    android:id="@+id/rlSummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txtHeaderSummary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:singleLine="true"
+                        android:hint="Account Summary"
+                        android:textColorHint="@color/grey"
+                        android:textColor="@color/grey"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical|left"
+                        android:textSize="@dimen/InnerLabelHeadersize"
+                        android:padding="10dp"
+                        android:layout_centerVertical="true" />
+                    <ImageView
+                        android:src="@drawable/downarrow"
+                        android:layout_width="30dp"
+                        android:layout_height="27dp"
+                        android:scaleType="fitCenter"
+                        android:padding="3dp"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/imageView1" />
+                </RelativeLayout>
+                    <LinearLayout
+                        android:id="@+id/LinearLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="2"
+                        android:padding="5dp"
+                        android:background="@drawable/bottomborder">
+                        <TextView
+                            android:id="@+id/txtApproachRole"
+                            android:textSize="@dimen/InnerLabelTextsize"
+                            android:text="Approach Role:"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp" />
+                        <TextView
+                            android:id="@+id/txtApproachRoleValue"
+                            android:textSize="@dimen/InnerLabelTextsize"
+                            android:text="Approach Manager"
+                            android:layout_width="0dp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/LinearLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="2"
+                        android:padding="5dp">
+                        <TextView
+                            android:id="@+id/txtApproachPointHeader"
+                            android:textSize="@dimen/InnerLabelTextsize"
+                            android:text="Approach Points"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/LinearLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="2"
+                        android:padding="5dp">
+                        <LinearLayout
+                            android:id="@+id/LinearLayout2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:weightSum="1"
+                            android:gravity="center_vertical"
+                            android:padding="5dp">
+                            <TextView
+                                android:id="@+id/txtPointsEarnedHeader"
+                                android:textSize="@dimen/InnerLabelTextsize"
+                                android:text="Points Earned"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.55" />
+                            <ImageView
+                                android:id="@+id/imgPointsEarned"
+                                android:src="@drawable/info"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.1" />
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/txtPointsEarned"
+                            android:textSize="@dimen/InnerLabelTextsize"
+                            android:text="350 Points"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:layout_gravity="center_vertical" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/LinearLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="2"
+                        android:padding="5dp">
+                        <LinearLayout
+                            android:id="@+id/LinearLayout2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:weightSum="1"
+                            android:gravity="center_vertical"
+                            android:padding="5dp">
+                            <TextView
+                                android:id="@+id/txtPointsAvailableHeader"
+                                android:textSize="@dimen/InnerLabelTextsize"
+                                android:text="Points Available"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.62" />
+                            <ImageView
+                                android:id="@+id/imgPointsAvailable"
+                                android:src="@drawable/info"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.1" />
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/txtPointsAvailable"
+                            android:textSize="@dimen/InnerLabelTextsize"
+                            android:text="350 Points"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:layout_gravity="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/LinearLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="2"
+                        android:padding="5dp">
+                        <LinearLayout
+                            android:id="@+id/LinearLayout2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:weightSum="1"
+                            android:gravity="center_vertical"
+                            android:padding="5dp">
+                            <TextView
+                                android:id="@+id/txtPointsRedeemHeader"
+                                android:textSize="@dimen/InnerLabelTextsize"
+                                android:text="Points Redeemed"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.71"
+                                android:gravity="center_vertical" />
+                            <ImageView
+                                android:id="@+id/imgPointsRedeem"
+                                android:src="@drawable/info"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.1" />
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/txtPointsRedeem"
+                            android:textSize="@dimen/InnerLabelTextsize"
+                            android:text="350 Points"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:layout_gravity="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/LinearLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="2"
+                        android:padding="5dp">
+                        <LinearLayout
+                            android:id="@+id/LinearLayout2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:weightSum="1"
+                            android:gravity="center_vertical"
+                            android:padding="5dp">
+                            <TextView
+                                android:id="@+id/txtPointsBalanceHeader"
+                                android:textSize="@dimen/InnerLabelTextsize"
+                                android:text="Points Balance"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.61"
+                                android:gravity="center_vertical" />
+                            <ImageView
+                                android:id="@+id/imgPointsBalance"
+                                android:src="@drawable/info"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.1"
+                                android:layout_gravity="center" />
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/txtPointsBalance"
+                            android:textSize="@dimen/InnerLabelTextsize"
+                            android:text="350 Points"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:layout_gravity="center" />
+                    </LinearLayout>
+            </LinearLayout>
+            <View
+                android:id="@+id/viewSecond"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/appBackground" />
+            <LinearLayout
+                android:id="@+id/llInfoAndPassContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/InnerContentPadding"
+                android:background="@color/white">
+                <RelativeLayout
+                    android:id="@+id/rlInfoAndPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txtCourse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:singleLine="true"
+                        android:hint="Information &amp; Password"
+                        android:textColorHint="@color/grey"
+                        android:textColor="@color/grey"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical|left"
+                        android:textSize="@dimen/InnerLabelHeadersize"
+                        android:padding="10dp"
+                        android:layout_centerVertical="true" />
+                    <ImageView
+                        android:src="@drawable/downarrow"
+                        android:layout_width="30dp"
+                        android:layout_height="27dp"
+                        android:scaleType="fitCenter"
+                        android:padding="3dp"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/imageView1" />
+                </RelativeLayout>
+                <EditText
+                    android:id="@+id/editOPassword"
+                    android:background="@drawable/EditTextBorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:hint="Current Password"
+                    android:textSize="12dp"
+                    android:paddingLeft="@dimen/InnerContentPadding"
+                    android:layout_margin="5dp" />
+                <EditText
+                    android:id="@+id/editNPassword"
+                    android:background="@drawable/EditTextBorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:hint="New Password"
+                    android:textSize="12dp"
+                    android:paddingLeft="@dimen/InnerContentPadding"
+                    android:layout_margin="5dp" />
+                <EditText
+                    android:id="@+id/editCPassword"
+                    android:background="@drawable/EditTextBorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:hint="Confirm Password"
+                    android:textSize="12dp"
+                    android:paddingLeft="@dimen/InnerContentPadding"
+                    android:layout_margin="5dp" />
+                <Button
+                    android:id="@+id/btnAccept"
+                    android:layout_width="@dimen/InnerButtonWidth"
+                    android:layout_height="@dimen/InnerButtonHeight"
+                    android:layout_gravity="left"
+                    android:textAlignment="center"
+                    android:textColor="#FFF"
+                    android:textSize="@dimen/InnerLabelTextsize"
+                    android:text="Submit"
+                    android:background="#005A82"
+                    android:layout_margin="5dp" />
+            </LinearLayout>
+            <View
+                android:id="@+id/viewthird"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/appBackground" />
+            <LinearLayout
+                android:id="@+id/llNotificationContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/InnerContentPadding"
+                android:background="@color/white">
+                <RelativeLayout
+                    android:id="@+id/rlNotification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txtNotification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:singleLine="true"
+                        android:hint="Notification"
+                        android:textColorHint="@color/grey"
+                        android:textColor="@color/grey"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical|left"
+                        android:textSize="@dimen/InnerLabelHeadersize"
+                        android:padding="10dp"
+                        android:layout_centerVertical="true" />
+                    <ImageView
+                        android:src="@drawable/downarrow"
+                        android:layout_width="30dp"
+                        android:layout_height="27dp"
+                        android:scaleType="fitCenter"
+                        android:padding="3dp"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/imageView1" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:padding="5dp"
+                    android:background="@drawable/bottomborder">
+                    <TextView
+                        android:id="@+id/txtEmail"
+                        android:textSize="@dimen/InnerLabelTextsize"
+                        android:text="Email Preferences"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp" />
+                    <CheckBox
+                        android:text="Send Me Updates"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chkEmail"
+                        android:theme="@style/MyCheckBox"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:padding="5dp"
+                    android:background="@drawable/bottomborder">
+                    <TextView
+                        android:id="@+id/txtNotification"
+                        android:text="Notifications"
+                        android:textSize="@dimen/InnerLabelTextsize"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp" />
+                    <CheckBox
+                        android:text="Send Me Updates"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chkNotification"
+                        android:theme="@style/MyCheckBox"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/txtContact"
+                        android:text="Contact Aquatrols"
+                        android:layout_width="0dp"
+                        android:textSize="@dimen/InnerLabelTextsize"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp" />
+                    <Button
+                        android:id="@+id/btnSend"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/InnerButtonHeight"
+                        android:layout_gravity="left"
+                        android:textAlignment="center"
+                        android:layout_weight="0.5"
+                        android:textColor="#FFF"
+                        android:textSize="@dimen/InnerLabelTextsize"
+                        android:text="Send Email"
+                        android:background="#005A82" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

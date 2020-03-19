@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{5E14A8B7-C430-46B5-AAC8-A109A90B55B5}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Aquatrols</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ServiceHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AccessTokenResponseEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ChangePasswordEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ConfigEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\CourseEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DistributorInfoEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ForgotPasswordEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\LoginEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\NotificationEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ProductCheckoutEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ProductListEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\RedeemPointEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\SignUpEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\UserCategoryEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\UserInfoEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\PurchaseHistoryEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\PushDataModelEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\MyQueueEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\TmSnaptShotEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ExceptionHandlingEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\LpPointStatusModel.cs" />
+  </ItemGroup>
+</Project>

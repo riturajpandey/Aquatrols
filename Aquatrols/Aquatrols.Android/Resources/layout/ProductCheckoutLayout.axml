@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/HeaderHeight">
+  <Button
+        android:id="@+id/btnPlaceOrder"
+        android:layout_height="@dimen/checkOutbtnHeight"
+        android:layout_width="@dimen/checkoutButtonwidth"
+        android:text="ENTER"
+        android:background="#005A82"
+        android:textAllCaps="false"
+        android:layout_marginRight="@dimen/InnercontentMargin"
+        android:textColor="@color/white"
+        android:textSize="@dimen/ButtontextSize"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+	    android:layout_below="@+id/RcyCheckoutProductList"/>
+     <android.support.v7.widget.RecyclerView
+        android:id="@+id/RcyCheckoutProductList"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+</RelativeLayout>

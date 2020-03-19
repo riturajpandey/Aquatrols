@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+ 
+  <!-- Base application theme. -->
+  <style name="MyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+    <item name="android:colorActivatedHighlight">#ffffff</item>
+  </style>
+  <!-- Customize splash screen here.  -->
+  <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+    <item name="android:windowBackground">@color/appLandingColor</item>
+    <!--Override the status bar color-->
+    <item name="android:colorPrimaryDark">@color/appLandingColor</item>
+    <!--Override the status bas controls-->
+    <item name="android:statusBarColor">@color/appLandingColor</item>
+  </style>
+  <!-- floating edit text -->
+  <style name="TextLabel" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!--Hint color and label color in FALSE state-->
+    <item name="android:textColorHint">@color/black</item>
+    <item name="android:textSize">20sp</item>
+    <!--Label color in TRUE state and bar color FALSE and TRUE State-->
+    <item name="colorControlNormal">@color/black</item>
+    <item name="colorControlActivated">@color/colorAccent</item>
+    <item name="colorControlHighlight">@color/colorAccent</item>
+  </style>
+ 
+  <!-- signIn Cancel -->
+  <style name="CancelBtn" parent="Theme.AppCompat.Light">
+    <item name="colorControlHighlight">@color/black</item>
+    <item name="colorButtonNormal">@color/white</item>
+  </style>
+  <!-- signIn SignIn -->
+  <style name="SignInBtn" parent="Theme.AppCompat.Light">
+    <item name="colorControlHighlight">@color/white</item>
+    <item name="colorButtonNormal">@color/black</item>
+  </style>
+  <!-- pay Btnpay -->
+  <style name="PayBtn" parent="Theme.AppCompat.Light">
+    <item name="colorControlHighlight">@color/white</item>
+    <item name="colorButtonNormal">@color/black</item>
+  </style>
+  <!-- gift BtnAmt -->
+  <style name="AmtBtn" parent="Theme.AppCompat.Light">
+    <item name="colorControlHighlight">@color/blue</item>
+    <item name="colorButtonNormal">@color/white</item>
+  </style>
+  <!-- gift BtnAmt selected-->
+  <style name="AmtBtnSelected" parent="Theme.AppCompat.Light">
+    <item name="colorControlHighlight">@color/white</item>
+    <item name="colorButtonNormal">@color/blue</item>
+  </style>
+  <!--forgot username password buttons -->
+  <style name="ForgotBtnSelected" parent="Theme.AppCompat.Light">
+    <item name="colorControlHighlight">@color/pink</item>
+    <item name="colorButtonNormal">@color/white</item>
+  </style>
+  <!-- sign up CheckBox -->
+  <style name="MyCheckBox" parent="Theme.AppCompat.Light">
+    <item name="colorControlNormal">@color/grey</item>
+    <item name="colorControlActivated">@color/green</item>
+  </style>
+</resources>

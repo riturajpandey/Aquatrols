@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/termsID" android:title="Terms &amp; Conditions" showAsAction="always"/>
+  <item android:id="@+id/About" android:title="About The App" showAsAction="always"/>
+  <item android:id="@+id/privacyID" android:title="Privacy Policy" showAsAction="always"/>
+  <item android:id="@+id/FAQ" android:title="FAQ" showAsAction="always"/>
+  <item android:id="@+id/SupportID" android:title="Support" showAsAction="always"/>
+  <item android:id="@+id/logoutID" android:title="Logout" showAsAction="always"/>
+</menu>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:weightSum="100">
+	<TextView
+	  android:id="@+id/txtDistributor"
+	  android:layout_width="0dp"
+	  android:textColor="#000"
+	  android:textSize="@dimen/InnerLabelTextsize"
+      android:layout_height="wrap_content"
+	  android:layout_weight="45"/>
+	<View
+	  android:layout_height="wrap_content"
+	  android:layout_width="0dp"
+	  android:layout_weight="10"/>
+	<TextView
+	  android:id="@+id/txtCount"
+	  android:layout_width="0dp"
+	  android:textColor="#000"
+	  android:textSize="@dimen/InnerLabelTextsize"
+      android:layout_height="wrap_content"
+	  android:layout_weight="45"/>
+</LinearLayout>

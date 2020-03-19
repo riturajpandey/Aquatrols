@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imgProductIcon"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+	    android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/InnercontentMargin"
+        android:layout_marginBottom="@dimen/InnercontentMargin" />
+    <View
+        android:layout_height="5dp"
+        android:layout_marginTop="@dimen/RecycleBordermargin"
+        android:layout_width="match_parent"
+        android:background="@drawable/bottomborder" />
+</LinearLayout>

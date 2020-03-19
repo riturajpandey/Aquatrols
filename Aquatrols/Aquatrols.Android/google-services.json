@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "58984492412",
+    "firebase_url": "https://aquatrolsapproach.firebaseio.com",
+    "project_id": "aquatrolsapproach",
+    "storage_bucket": "aquatrolsapproach.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58984492412:android:4c2d15a8f8bd2450",
+        "android_client_info": {
+          "package_name": "com.approach.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "58984492412-1pugm6u268d36228q1igoldgb77c6v7j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBapZHf-jZ5CbJXN4uGq1Q0vwLM2JkAy28"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

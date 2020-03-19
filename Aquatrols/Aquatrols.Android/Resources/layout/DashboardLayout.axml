@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/DashboardBackground">
+    <RelativeLayout
+        android:id="@+id/rllHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/HeaderHeight"
+        android:background="@color/appBackground"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:src="@drawable/AquatrolsLogoWhite"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imgLogo"
+            android:layout_alignParentLeft="true" />
+        <TextView
+            android:id="@+id/txtHeading"
+            android:text="@string/Dashboard"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:tag="Heading" />
+        <ImageView
+            android:src="@drawable/menu"
+            android:layout_width="30dp"
+            android:layout_height="60dp"
+            android:id="@+id/imgMenu"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/rllUser"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/white"
+        android:alpha="0.8"
+        android:weightSum="2"
+        android:padding="10dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <LinearLayout
+            android:id="@+id/rllUserInfo"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:id="@+id/txtFullname"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:textSize="14dp"
+                android:textColor="@color/appBackground"
+                android:tag="Heading"
+                android:gravity="top" />
+            <TextView
+                android:id="@+id/txtcoursename"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:textSize="14dp"
+                android:textColor="@color/appBackground"
+                android:textStyle="italic"
+                android:tag="Italic" />
+            <TextView
+                android:id="@+id/txtusercategory"
+                android:layout_width="match_parent"
+                android:layout_height="17dp"
+                android:textSize="12dp"
+                android:textColor="@color/grey"
+                android:layout_marginTop="10dp"
+                android:tag="Heading" />
+            <TextView
+                android:id="@+id/txtPoints"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:textSize="13dp"
+                android:textColor="@color/grey"
+                android:textStyle="italic"
+                android:tag="italic" />
+        </LinearLayout>
+        <ImageView
+            android:src="@drawable/righarrowIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgArrow"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="0.2"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+<!-- Content Container -->
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/grey"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/bottom_navigation_main" />
+</RelativeLayout>

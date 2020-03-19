@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/HeaderLayout" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Your Queue is empty."
+        android:textSize="@dimen/QueueMessageTextsize"
+        android:textColor="#000"
+        android:id="@+id/txtEmpty"
+        android:gravity="center"
+        android:layout_centerInParent="true" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclerCartProductList"
+        android:layout_marginTop="@dimen/HeaderHeight"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rlHeader"
+        android:layout_marginBottom="@dimen/HeaderHeight" />
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_height="@dimen/ButtonHeight"
+        android:layout_width="@dimen/ButtonWidth"
+        android:layout_margin="@dimen/InnerContentPadding"
+        android:text="Continue"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFF"
+        android:background="#005A82"
+        android:textSize="@dimen/ButtontextSize" />
+</RelativeLayout>

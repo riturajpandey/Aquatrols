@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.approach.android" android:versionCode="50" android:installLocation="internalOnly" android:versionName="2.93">
+	<application android:allowBackup="true" android:theme="@style/MyAppTheme" android:label="Aquatrols Approach" android:hardwareAccelerated="false" android:largeHeap="true" android:icon="@drawable/Icon">
+		<meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id" />
+		<meta-data android:name="com.facebook.sdk.CodelessDebugLogEnabled" android:value="true" />
+		<receiver android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" android:exported="false" />
+		<receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND">
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+				<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+				<category android:name="${applicationId}" />
+			</intent-filter>
+		</receiver>
+		<provider android:name="android.support.v4.content.FileProvider" android:grantUriPermissions="true" android:exported="false" android:authorities="${applicationId}.fileprovider">
+			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths" />
+		</provider>
+	</application>
+	<!-- We need to be able to download map tiles and access Google Play Services-->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<!-- Allow the application to access Google web-based services. -->
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+	<!-- Google Maps for Android v2 will cache map tiles on external storage -->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<!-- Google Maps for Android v2 needs this permission so that it may check the connection state as it must download data -->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<!-- These are optional, but recommended. They will allow Maps to use the My Location provider. -->
+	<uses-permission android:name="android.permission.ACCESS_GPS" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+	<uses-sdk android:targetSdkVersion="28" android:minSdkVersion="26" />
+</manifest>

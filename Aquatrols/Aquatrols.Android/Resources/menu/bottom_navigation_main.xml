@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item
+     android:id="@+id/Home"
+     android:enabled="true"
+     android:icon="@drawable/home"
+     android:title="@string/Home" />
+  <item
+      android:id="@+id/Book"
+      android:enabled="true"
+      android:icon="@drawable/Book"
+      android:title="@string/book" />
+  <item
+      android:id="@+id/Redeem"
+      android:enabled="true"
+      android:icon="@drawable/Redeem"
+      android:title="@string/redeem" />
+  <item
+      android:id="@+id/About"
+      android:enabled="true"
+      android:icon="@drawable/about"
+      android:title="@string/about"/>
+</menu>

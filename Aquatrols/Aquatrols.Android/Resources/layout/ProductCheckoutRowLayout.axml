@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/InnerContentPadding">
+<LinearLayout 
+	android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="100">
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:scaleType="fitCenter"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/ProductCheckoutImageheight"
+        android:layout_weight="45" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="10" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="45"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:id="@+id/txtQuantity"
+            android:textSize="@dimen/InnerLabelTextsize"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:background="@drawable/blackborder"
+            android:layout_height="@dimen/backIconHeight" />
+        <TextView
+            android:id="@+id/textPointsPerGallon"
+            android:layout_width="match_parent"
+            android:textColor="#000"
+            android:textSize="@dimen/InnerLabelTextsize"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/InnercontentMargin" />
+        <TextView
+            android:id="@+id/txtDistributor"
+            android:layout_width="match_parent"
+            android:textColor="#000"
+            android:textSize="@dimen/InnerLabelTextsize"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center" />
+    </LinearLayout>
+</LinearLayout>
+	</LinearLayout>

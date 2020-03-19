@@ -1,0 +1,890 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\packages\Xamarin.Build.Download.0.4.11\build\Xamarin.Build.Download.props" Condition="Exists('..\..\packages\Xamarin.Build.Download.0.4.11\build\Xamarin.Build.Download.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{9E55031B-D6B6-4E02-965D-BCDD8614A841}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Aquatrols.iOS</RootNamespace>
+    <AssemblyName>Aquatrols.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: garv jasuja (4CGR59U295)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <IOSDebuggerPort>62624</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>VS: com.approach.ios Development</CodesignProvision>
+    <MtouchExtraArgs>--registrar:static</MtouchExtraArgs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <CodesignProvision>new_profile</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: garv jasuja (4CGR59U295)</CodesignKey>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>VS: com.approach.ios Development</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: garv jasuja (4CGR59U295)</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFloat32>true</MtouchFloat32>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IOSDebuggerPort>33656</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <LangVersion>Default</LangVersion>
+    <CodesignResourceRules>
+    </CodesignResourceRules>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchDebug>
+    </MtouchDebug>
+    <MtouchExtraArgs>
+    </MtouchExtraArgs>
+    <MtouchExtraArgs>
+    </MtouchExtraArgs>
+    <MtouchFastDev>true</MtouchFastDev>
+    <WarningsNotAsErrors>
+    </WarningsNotAsErrors>
+    <MtouchVerbosity>2</MtouchVerbosity>
+    <CodesignProvision>VS: com.approach.ios Development</CodesignProvision>
+    <CodesignExtraArgs />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OpenTK-1.0" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="ToastIOS">
+      <HintPath>DLL\ToastIOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>DLL\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="EasyTipView">
+      <HintPath>..\..\packages\EasyTipView.1.0.1\lib\xamarinios10\EasyTipView.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="Firebase.Core">
+      <HintPath>..\..\packages\Xamarin.Firebase.iOS.Core.4.0.13.1\lib\Xamarin.iOS10\Firebase.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.InstanceID">
+      <HintPath>..\..\packages\Xamarin.Firebase.iOS.InstanceID.2.0.8\lib\Xamarin.iOS10\Firebase.InstanceID.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Analytics">
+      <HintPath>..\..\packages\Xamarin.Firebase.iOS.Analytics.4.0.5.1\lib\Xamarin.iOS10\Firebase.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.CloudMessaging">
+      <HintPath>..\..\packages\Xamarin.Firebase.iOS.CloudMessaging.2.0.8.1\lib\Xamarin.iOS10\Firebase.CloudMessaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.GoogleAnalytics.Abstractions">
+      <HintPath>..\..\packages\ksemenenko.GoogleAnalytics.1.0.3.2\lib\XamariniOS10\Plugin.GoogleAnalytics.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.GoogleAnalytics">
+      <HintPath>..\..\packages\ksemenenko.GoogleAnalytics.1.0.3.2\lib\XamariniOS10\Plugin.GoogleAnalytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Essentials, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Essentials.1.1.0\lib\xamarinios10\Xamarin.Essentials.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="ModernHttpClient">
+      <HintPath>DLL\ModernHttpClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.CoreKit">
+      <HintPath>..\..\packages\Xamarin.Facebook.CoreKit.iOS.4.38.0\lib\Xamarin.iOS10\Facebook.CoreKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.LoginKit">
+      <HintPath>..\..\packages\Xamarin.Facebook.LoginKit.iOS.4.38.0\lib\Xamarin.iOS10\Facebook.LoginKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.MarketingKit">
+      <HintPath>..\..\packages\Xamarin.Facebook.MarketingKit.iOS.4.38.0\lib\Xamarin.iOS10\Facebook.MarketingKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.MessengerShareKit">
+      <HintPath>..\..\packages\Xamarin.Facebook.MessengerShareKit.iOS.1.3.2.1\lib\Xamarin.iOS10\Facebook.MessengerShareKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.PlacesKit">
+      <HintPath>..\..\packages\Xamarin.Facebook.PlacesKit.iOS.4.38.0\lib\Xamarin.iOS10\Facebook.PlacesKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.ShareKit">
+      <HintPath>..\..\packages\Xamarin.Facebook.ShareKit.iOS.4.38.0\lib\Xamarin.iOS10\Facebook.ShareKit.dll</HintPath>
+    </Reference>
+    <Reference Include="GetiOSModel">
+      <HintPath>..\..\packages\dannycabrera.GetiOSModel.1.8.0\lib\xamarinios10\GetiOSModel.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\imgBackArrow.imageset\backarrowicon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\imgBackArrow.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Dashboard.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\imgVisibleEye.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\imgInvisibleEye.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuImage.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Dashboard.imageset\DashboardBackground.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RightArrow.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RightArrow.imageset\righarrowIcon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\bookImage.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\redeemImage.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\aboutImage.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\aboutImage.imageset\about.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\redeemImage.imageset\Redeem.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\bookImage.imageset\Book.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\imgBack.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\imgBack.imageset\back.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ImgBookingHero.imageset\BookingImage.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ImgBookingHero.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\HomeImage.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\HomeImage.imageset\home.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\cartImage.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ImgCheckbox.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ImgCheckbox.imageset\check.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ImgUnCheckbox.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ImgUnCheckbox.imageset\uncheck.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\downArrowImage.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\downArrowImage.imageset\downArrow.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ApproachLogoCircle.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\InfoImage.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\InfoImage.imageset\info.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RefreshImage.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\imgVisibleEye.imageset\imgvisibleEye.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\imgInvisibleEye.imageset\imginvisibleinvisible.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GrayDownArrowImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GrayDownArrowImg.imageset\GrayDownArrow.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuImage.imageset\iconMenu.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\HomeWhiteImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\HomeWhiteImg.imageset\home-26.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BookWhiteImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BookWhiteImg.imageset\bag-48.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\redeemWImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AboutWhiteImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AboutWhiteImg.imageset\about-48 .png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\redeemWImg.imageset\gift-card White 48.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RedeemBackgroundImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RedeemBackgroundImg.imageset\redeemBackground.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RssImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\twitterImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\facebookImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\youtubeImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\youtubeImg.imageset\youtube.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\facebookImg.imageset\facebook.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\twitterImg.imageset\twitter.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RssImg.imageset\rss.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\instagramImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\instagramImg.imageset\instagram.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\cartImage.imageset\clipboard.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\QueueShowCase.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\QueueShowCase.imageset\queueScreen.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MoveShowCaseImage.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MoveShowCaseImage.imageset\moveProduct.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\imgAbout.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\imgAbout.imageset\About-Aquatrols.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\imgProducts.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\imgProducts.imageset\Products-Button.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\imgTerritoryManager.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\imgTerritoryManager.imageset\Territory-Manager-Button.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ProfessionalTurfImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AgricultureImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\HorticultureImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\HorticultureImg.imageset\Horticulture.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AgricultureImg.imageset\Agriculture.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ProfessionalTurfImg.imageset\Pro Turf.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DanMaciasImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DanMaciasImg.imageset\DanMacias.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\KenMauserImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\KenMauserImg.imageset\Ken-Mauser.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\JohnTurnerImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\JohnTurnerImg.imageset\John-Turner.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RovertWillsonImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RovertWillsonImg.imageset\Robert-Willson.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GregLovellImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GregLovellImg.imageset\Greg-Lovell-01.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ScottPynotImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ScottPynotImg.imageset\ScottPynot.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TomValentieImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TomValentieImg.imageset\Tom-Valentine-Aquatrols.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\WesHammImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\WesHammImg.imageset\Wes-Hamm.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\WalterDeaImg .imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\WalterDeaImg .imageset\Walter Dea .jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ApproachLogoCircle.imageset\Aquatrols-logo-circle-reversed.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AboutBackgroundImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AboutBackgroundImg.imageset\AboutusBackground.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ApproachLogo.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ApproachLogo.imageset\approach-logo.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RefreshImage.imageset\RefreshImage.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TmViewDashboardImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TmViewDashboardImg.imageset\TM-View-Button.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TmCourseImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TmDistributorImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TmSnapShotImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TmHomeImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TmHomeImg.imageset\Dashboard-buttonBW.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TmSnapShotImg.imageset\Snapshot-buttonBW.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TmDistributorImg.imageset\Distributor-ButtonBW.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TmCourseImg.imageset\Course-ButtonBW.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TmCourseImg.imageset\Course-Button-iPad.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TmDistributorImg.imageset\Distributor-Button-iPad.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TmSnapShotImg.imageset\Snapshot-button-iPad.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TmHomeImg.imageset\Dashboard-button-iPad.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TmViewDashboardImg.imageset\TM-View-Button-iPad.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\aboutUsFlowImg.imageset\AboutApproachArt.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\aboutUsFlowImg.imageset\AboutApproachArt-1.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\aboutUsFlowImg.imageset\AboutApproachArt-2.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\aboutUsFlowImg.imageset\AboutApproachArt-3.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\aboutUsFlowImg.imageset\AboutApproachArt-4.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\aboutUsFlowImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\AboutBackgroundImg.imageset\" />
+    <Folder Include="Assets.xcassets\aboutImage.imageset\" />
+    <Folder Include="Assets.xcassets\aboutUsFlowImg.imageset\" />
+    <Folder Include="Assets.xcassets\AboutWhiteImg.imageset\" />
+    <Folder Include="Assets.xcassets\AgricultureImg.imageset\" />
+    <Folder Include="Assets.xcassets\ApproachLogo.imageset\" />
+    <Folder Include="Assets.xcassets\ApproachLogoCircle.imageset\" />
+    <Folder Include="Assets.xcassets\AquatrolsLogo.imageset\" />
+    <Folder Include="Assets.xcassets\AquatrolsLogoColor.imageset\" />
+    <Folder Include="Assets.xcassets\BookHeroImage.imageset\" />
+    <Folder Include="Assets.xcassets\bookImage.imageset\" />
+    <Folder Include="Assets.xcassets\BookWhiteImg.imageset\" />
+    <Folder Include="Assets.xcassets\CabelasImg.imageset\" />
+    <Folder Include="Assets.xcassets\cartImage.imageset\" />
+    <Folder Include="Assets.xcassets\DanMaciasImg.imageset\" />
+    <Folder Include="Assets.xcassets\Dashb.imageset\" />
+    <Folder Include="Assets.xcassets\Dashboard.imageset\" />
+    <Folder Include="Assets.xcassets\downArrowImage.imageset\" />
+    <Folder Include="Assets.xcassets\facebookImg.imageset\" />
+    <Folder Include="Assets.xcassets\fairWayslogo.imageset\" />
+    <Folder Include="Assets.xcassets\GrayDownArrowImg.imageset\" />
+    <Folder Include="Assets.xcassets\GregLovellImg.imageset\" />
+    <Folder Include="Assets.xcassets\HomeImage.imageset\" />
+    <Folder Include="Assets.xcassets\HomeWhiteImg.imageset\" />
+    <Folder Include="Assets.xcassets\HorticultureImg.imageset\" />
+    <Folder Include="Assets.xcassets\imgAbout.imageset\" />
+    <Folder Include="Assets.xcassets\ImgAccountCredit.imageset\" />
+    <Folder Include="Assets.xcassets\ImgAmLeonard.imageset\" />
+    <Folder Include="Assets.xcassets\imgBack.imageset\" />
+    <Folder Include="Assets.xcassets\imgBackArrow.imageset\" />
+    <Folder Include="Assets.xcassets\ImgBookingHero.imageset\" />
+    <Folder Include="Assets.xcassets\ImgCheckbox.imageset\" />
+    <Folder Include="Assets.xcassets\imgInvisibleEye.imageset\" />
+    <Folder Include="Assets.xcassets\imgProducts.imageset\" />
+    <Folder Include="Assets.xcassets\ImgSummit.imageset\" />
+    <Folder Include="Assets.xcassets\imgTerritoryManager.imageset\" />
+    <Folder Include="Assets.xcassets\ImgUnCheckbox.imageset\" />
+    <Folder Include="Assets.xcassets\imgVisibleEye.imageset\" />
+    <Folder Include="Assets.xcassets\InfoImage.imageset\" />
+    <Folder Include="Assets.xcassets\instagramImg.imageset\" />
+    <Folder Include="Assets.xcassets\JohnTurnerImg.imageset\" />
+    <Folder Include="Assets.xcassets\KenMauserImg.imageset\" />
+    <Folder Include="Assets.xcassets\MenuImage.imageset\" />
+    <Folder Include="Assets.xcassets\MoveShowCaseImage.imageset\" />
+    <Folder Include="Assets.xcassets\NewEyeVisible.imageset\" />
+    <Folder Include="Assets.xcassets\ProfessionalTurfImg.imageset\" />
+    <Folder Include="Assets.xcassets\QueueShowCase.imageset\" />
+    <Folder Include="Assets.xcassets\RedeemBackgroundImg.imageset\" />
+    <Folder Include="Assets.xcassets\redeemImage.imageset\" />
+    <Folder Include="Assets.xcassets\redeemWImg.imageset\" />
+    <Folder Include="Assets.xcassets\RefreshImage.imageset\" />
+    <Folder Include="Assets.xcassets\RevolutionImage.imageset\" />
+    <Folder Include="Assets.xcassets\RightArrow.imageset\" />
+    <Folder Include="Assets.xcassets\RovertWillsonImg.imageset\" />
+    <Folder Include="Assets.xcassets\RssImg.imageset\" />
+    <Folder Include="Assets.xcassets\ScottPynotImg.imageset\" />
+    <Folder Include="Assets.xcassets\TmCourseImg.imageset\" />
+    <Folder Include="Assets.xcassets\TmDistributorImg.imageset\" />
+    <Folder Include="Assets.xcassets\TmHomeImg.imageset\" />
+    <Folder Include="Assets.xcassets\TmSnapShotImg.imageset\" />
+    <Folder Include="Assets.xcassets\TmViewDashboardImg.imageset\" />
+    <Folder Include="Assets.xcassets\TomValentieImg.imageset\" />
+    <Folder Include="Assets.xcassets\twitterImg.imageset\" />
+    <Folder Include="Assets.xcassets\UserImage.imageset\" />
+    <Folder Include="Assets.xcassets\VisaGiftCardImg.imageset\" />
+    <Folder Include="Assets.xcassets\VisaImg.imageset\" />
+    <Folder Include="Assets.xcassets\WalterDeaImg .imageset\" />
+    <Folder Include="Assets.xcassets\WesHammImg.imageset\" />
+    <Folder Include="Assets.xcassets\youtubeImg.imageset\" />
+    <Folder Include="Assets.xcassets\ZipLineImage.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="DLL\ToastIOS.dll" />
+    <None Include="DLL\Newtonsoft.Json.dll" />
+    <None Include="packages.config" />
+    <None Include="DLL\ModernHttpClient.dll" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Controllers\SignUpController.cs" />
+    <Compile Include="Controllers\SignUpController.designer.cs">
+      <DependentUpon>SignUpController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\LoginController.designer.cs">
+      <DependentUpon>LoginController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\DashboardController.cs" />
+    <Compile Include="Controllers\DashboardController.designer.cs">
+      <DependentUpon>DashboardController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\Utility.cs" />
+    <Compile Include="Helper\Reachability.cs" />
+    <Compile Include="AppResources.Designer.cs">
+      <DependentUpon>AppResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Helper\LoadingOverlay.cs" />
+    <Compile Include="Controllers\ForgotPasswordController.cs" />
+    <Compile Include="Controllers\ForgotPasswordController.designer.cs">
+      <DependentUpon>ForgotPasswordController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\BookProductsController.cs" />
+    <Compile Include="Controllers\BookProductsController.designer.cs">
+      <DependentUpon>BookProductsController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\MyAccountController.cs" />
+    <Compile Include="Controllers\MyAccountController.designer.cs">
+      <DependentUpon>MyAccountController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomCell\CustCellProductlist.cs" />
+    <Compile Include="CustomCell\CustCellProductlist.designer.cs">
+      <DependentUpon>CustCellProductlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableVewSource\TableViewProductList.cs" />
+    <Compile Include="TableVewSource\TableViewEditGallonProductList.cs" />
+    <Compile Include="CustomCell\CustCellEditGallonProductList.cs" />
+    <Compile Include="CustomCell\CustCellEditGallonProductList.designer.cs">
+      <DependentUpon>CustCellEditGallonProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CourseController.cs" />
+    <Compile Include="Controllers\CourseController.designer.cs">
+      <DependentUpon>CourseController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomCell\CustCellCoursename.cs" />
+    <Compile Include="CustomCell\CustCellCoursename.designer.cs">
+      <DependentUpon>CustCellCoursename.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableVewSource\TableViewCourse.cs" />
+    <Compile Include="Picker\CountryModel.cs" />
+    <Compile Include="Picker\CourseModel.cs" />
+    <Compile Include="Picker\ProvinceModel.cs" />
+    <Compile Include="Picker\StateModel.cs" />
+    <Compile Include="Controllers\WebViewController.cs" />
+    <Compile Include="Controllers\WebViewController.designer.cs">
+      <DependentUpon>WebViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\TermsConditionWebViewController.cs" />
+    <Compile Include="Controllers\TermsConditionWebViewController.designer.cs">
+      <DependentUpon>TermsConditionWebViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\MyCartController.cs" />
+    <Compile Include="Controllers\MyCartController.designer.cs">
+      <DependentUpon>MyCartController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\RedeemPointsController.cs" />
+    <Compile Include="Controllers\RedeemPointsController.designer.cs">
+      <DependentUpon>RedeemPointsController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\AboutController.designer.cs">
+      <DependentUpon>AboutController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomCell\CustCellAboutProductList.cs" />
+    <Compile Include="CustomCell\CustCellAboutProductList.designer.cs">
+      <DependentUpon>CustCellAboutProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableVewSource\TableViewAboutProductList.cs" />
+    <Compile Include="Picker\MarketModel.cs" />
+    <Compile Include="CustomCell\CustCellMyCartProductList.cs" />
+    <Compile Include="CustomCell\CustCellMyCartProductList.designer.cs">
+      <DependentUpon>CustCellMyCartProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableVewSource\TableViewMyCartProductList.cs" />
+    <Compile Include="Helper\Constant.cs" />
+    <Compile Include="CustomCell\CustCellProductListUser.cs" />
+    <Compile Include="CustomCell\CustCellProductListUser.designer.cs">
+      <DependentUpon>CustCellProductListUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableVewSource\TableViewProductListUser.cs" />
+    <Compile Include="CustomCell\CustCellDistributorList.cs" />
+    <Compile Include="CustomCell\CustCellDistributorList.designer.cs">
+      <DependentUpon>CustCellDistributorList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableVewSource\TableViewDistributorList.cs" />
+    <Compile Include="Picker\DistributorModel.cs" />
+    <Compile Include="CustomCell\CustCellPurchaseHistory.cs" />
+    <Compile Include="CustomCell\CustCellPurchaseHistory.designer.cs">
+      <DependentUpon>CustCellPurchaseHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableVewSource\TableViewPurchaseHistory.cs" />
+    <Compile Include="CustomCell\CustCellGiftCard.cs" />
+    <Compile Include="CustomCell\CustCellGiftCard.designer.cs">
+      <DependentUpon>CustCellGiftCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableVewSource\TableViewGiftCard.cs" />
+    <Compile Include="CustomCell\CustCellGiftCardUser.cs" />
+    <Compile Include="CustomCell\CustCellGiftCardUser.designer.cs">
+      <DependentUpon>CustCellGiftCardUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableVewSource\TableViewGiftCardUser.cs" />
+    <Compile Include="Controllers\TmViewHomeController.cs" />
+    <Compile Include="Controllers\TmViewHomeController.designer.cs">
+      <DependentUpon>TmViewHomeController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\TmCourseSearchController.cs" />
+    <Compile Include="Controllers\TmCourseSearchController.designer.cs">
+      <DependentUpon>TmCourseSearchController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomCell\CustCellTmCourseName.cs" />
+    <Compile Include="CustomCell\CustCellTmCourseName.designer.cs">
+      <DependentUpon>CustCellTmCourseName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableVewSource\TableViewTmCourseList.cs" />
+    <Compile Include="CustomCell\CustCellTmSuperIntendent.cs" />
+    <Compile Include="CustomCell\CustCellTmSuperIntendent.designer.cs">
+      <DependentUpon>CustCellTmSuperIntendent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableVewSource\TableViewTmSuperIntendentList.cs" />
+    <Compile Include="Controllers\TmCourseResultController.cs" />
+    <Compile Include="Controllers\TmCourseResultController.designer.cs">
+      <DependentUpon>TmCourseResultController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableVewSource\TableTmCourseSearchResult.cs" />
+    <Compile Include="CustomCell\CustCellTmCourseResultSearch.cs" />
+    <Compile Include="CustomCell\CustCellTmCourseResultSearch.designer.cs">
+      <DependentUpon>CustCellTmCourseResultSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableVewSource\TableViewTmInnerProduct.cs" />
+    <Compile Include="CustomCell\CustCellInnerProduct.cs" />
+    <Compile Include="CustomCell\CustCellInnerProduct.designer.cs">
+      <DependentUpon>CustCellInnerProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\TmDistributorSearchController.cs" />
+    <Compile Include="Controllers\TmDistributorSearchController.designer.cs">
+      <DependentUpon>TmDistributorSearchController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Picker\TmStateModel.cs" />
+    <Compile Include="Picker\TmDistributorModel.cs" />
+    <Compile Include="Controllers\TmDistributorResultController.cs" />
+    <Compile Include="Controllers\TmDistributorResultController.designer.cs">
+      <DependentUpon>TmDistributorResultController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomCell\CustCellDistributorResult.cs" />
+    <Compile Include="CustomCell\CustCellDistributorResult.designer.cs">
+      <DependentUpon>CustCellDistributorResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableVewSource\TableViewDistributorResult.cs" />
+    <Compile Include="CustomCell\CustCellDistributorResultInner.cs" />
+    <Compile Include="CustomCell\CustCellDistributorResultInner.designer.cs">
+      <DependentUpon>CustCellDistributorResultInner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableVewSource\TableViewTmDistributorResultInner.cs" />
+    <Compile Include="Controllers\TmSnapResultController.cs" />
+    <Compile Include="Controllers\TmSnapResultController.designer.cs">
+      <DependentUpon>TmSnapResultController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomCell\CustCellSnapShotSignupCounts.cs" />
+    <Compile Include="CustomCell\CustCellSnapShotSignupCounts.designer.cs">
+      <DependentUpon>CustCellSnapShotSignupCounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableVewSource\TableTmSnapShotsignupCount.cs" />
+    <Compile Include="CustomCell\CustCellProdCommitmentPerDist.cs" />
+    <Compile Include="CustomCell\CustCellProdCommitmentPerDist.designer.cs">
+      <DependentUpon>CustCellProdCommitmentPerDist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableVewSource\TableViewProductCommPerDist.cs" />
+    <Compile Include="CustomCell\CustCellTotGallon.cs" />
+    <Compile Include="CustomCell\CustCellTotGallon.designer.cs">
+      <DependentUpon>CustCellTotGallon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableVewSource\TableViewTotalGallonPerLiter.cs" />
+    <Compile Include="Controllers\LpRedeemWebViewController.cs" />
+    <Compile Include="Controllers\LpRedeemWebViewController.designer.cs">
+      <DependentUpon>LpRedeemWebViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AbpoutAppViewController.cs" />
+    <Compile Include="Controllers\AbpoutAppViewController.designer.cs">
+      <DependentUpon>AbpoutAppViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\RegistrationSuccessViewController.cs" />
+    <Compile Include="Controllers\RegistrationSuccessViewController.designer.cs">
+      <DependentUpon>RegistrationSuccessViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\LoggedInUserWebViewController.cs" />
+    <Compile Include="Controllers\LoggedInUserWebViewController.designer.cs">
+      <DependentUpon>LoggedInUserWebViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VwHeader.cs" />
+    <Compile Include="VwHeader.designer.cs">
+      <DependentUpon>VwHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="popUpMenu.cs" />
+    <Compile Include="popUpMenu.designer.cs">
+      <DependentUpon>popUpMenu.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Fonts\Roboto-Bold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\Roboto-Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\Roboto-Italic.ttf" />
+    <BundleResource Include="Resources\Fonts\DroidSerif-Regular.ttf">
+      <IncludeInPackage>false</IncludeInPackage>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\sanserif-Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="GoogleService-Info.plist" />
+  </ItemGroup>
+  <Import Project="..\Aquatrols\Aquatrols.projitems" Label="Shared" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\..\packages\Xamarin.Build.Download.0.4.11\build\Xamarin.Build.Download.targets" Condition="Exists('..\..\packages\Xamarin.Build.Download.0.4.11\build\Xamarin.Build.Download.targets')" />
+  <Import Project="..\..\packages\Xamarin.Firebase.iOS.Core.4.0.13.1\build\Xamarin.Firebase.iOS.Core.targets" Condition="Exists('..\..\packages\Xamarin.Firebase.iOS.Core.4.0.13.1\build\Xamarin.Firebase.iOS.Core.targets')" />
+  <Import Project="..\..\packages\Xamarin.Firebase.iOS.InstanceID.2.0.8\build\Xamarin.Firebase.iOS.InstanceID.targets" Condition="Exists('..\..\packages\Xamarin.Firebase.iOS.InstanceID.2.0.8\build\Xamarin.Firebase.iOS.InstanceID.targets')" />
+  <Import Project="..\..\packages\Xamarin.Firebase.iOS.Analytics.4.0.5.1\build\Xamarin.Firebase.iOS.Analytics.targets" Condition="Exists('..\..\packages\Xamarin.Firebase.iOS.Analytics.4.0.5.1\build\Xamarin.Firebase.iOS.Analytics.targets')" />
+  <Import Project="..\..\packages\Xamarin.Firebase.iOS.CloudMessaging.2.0.8.1\build\Xamarin.Firebase.iOS.CloudMessaging.targets" Condition="Exists('..\..\packages\Xamarin.Firebase.iOS.CloudMessaging.2.0.8.1\build\Xamarin.Firebase.iOS.CloudMessaging.targets')" />
+</Project>

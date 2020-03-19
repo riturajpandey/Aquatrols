@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<RelativeLayout
+        android:id="@+id/rllHeader"
+		android:background="@color/appBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:paddingLeft="@dimen/InnerContentPadding"
+        android:paddingRight="@dimen/InnerContentPadding">
+        <ImageView
+            android:src="@drawable/back"
+            android:layout_width="@dimen/backIconwidth"
+            android:layout_height="@dimen/backIconHeight"
+            android:id="@+id/imgBack"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:maxHeight="20dp" />
+        <TextView
+            android:id="@+id/txtHeading"
+			android:text="Course Search"
+            android:layout_width="@dimen/HEadingTextviewHeight"
+            android:layout_height="@dimen/HeaderHeight"
+            android:textSize="@dimen/QueueMessageTextsize"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:tag="Heading"
+            android:layout_centerInParent="true" />
+		<ImageView
+                android:src="@drawable/iconMenu"
+                android:layout_width="@dimen/refreshIconSize"
+                android:layout_height="@dimen/refreshIconSize"
+                android:id="@+id/imgMenu"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+    </RelativeLayout>
+	<TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+		android:text="@string/TmCourseHomeInfoText"
+		android:textColor="@color/black"
+		android:textSize="@dimen/InnerLabelAboutusPageSize"
+	    android:layout_margin="@dimen/InnercontentMargin"/>	
+     <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtInputLayoutCoursename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.1"
+                android:layout_margin="@dimen/InnercontentMargin"
+                android:theme="@style/TextLabelDark">
+                <AutoCompleteTextView
+                    android:id="@+id/autocompleteTmCoursename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Course/Business"
+                    android:textSize="@dimen/InnerLabelAboutusPageSize"
+                    android:textColor="#000"
+			       android:singleLine="true"
+			        android:textColorHint="#FFF"
+                    android:completionThreshold="1" />
+      </android.support.design.widget.TextInputLayout> 
+	  <Button
+            android:id="@+id/btnCourseSearch"
+            android:layout_margin="@dimen/InnerLabelAboutusPageSize"
+            android:layout_width="@dimen/ButtonWidth"
+            android:layout_height="@dimen/ButtonHeight"
+            android:layout_gravity="left"
+            android:textColor="#FFF"
+            android:textSize="@dimen/ButtontextSize"
+            android:letterSpacing=".2"
+            android:text="SEARCH"
+            android:background="#005A82" />
+	<android.support.design.widget.TextInputLayout
+                android:id="@+id/txtInputLayoutSuperIntendantname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.1"
+                android:layout_margin="@dimen/InnercontentMargin"
+                android:theme="@style/TextLabelDark">
+                <AutoCompleteTextView
+                    android:id="@+id/autocompleteSuperIntendantname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Superintendent"
+			        android:singleLine="true"
+                    android:textSize="@dimen/InnerLabelAboutusPageSize"
+                    android:textColor="#000"
+                    android:completionThreshold="1" />
+      </android.support.design.widget.TextInputLayout> 
+	  <Button
+            android:id="@+id/btnSuperIntendantSearch"
+            android:layout_margin="@dimen/InnerLabelAboutusPageSize"
+            android:layout_width="@dimen/ButtonWidth"
+            android:layout_height="@dimen/ButtonHeight"
+            android:layout_gravity="left"
+            android:textColor="#FFF"
+            android:textSize="@dimen/ButtontextSize"
+            android:letterSpacing=".2"
+            android:text="SEARCH"
+            android:background="#005A82" />
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/lvTheater"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="20dip"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="10dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="insideOverlay"
+        android:background="#EAEAEA"
+        android:paddingRight="5dp"
+        android:divider="@drawable/Spinnerlist_divider"
+        android:dividerHeight="2px"
+        android:choiceMode="singleChoice"
+        android:listSelector="#EAEAEA" />
+    <ProgressBar
+        android:id="@+id/loading_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="#5592FB"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

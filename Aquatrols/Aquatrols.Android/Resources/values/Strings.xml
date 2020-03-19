@@ -1,0 +1,580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="loginTextforAnalytics">Login</string>
+  <string name="TerritoryManager">TerritoryManager</string>
+  <string name="TmHomeInfoText">Review information registered in your territory by Golf Course or Distributor. Cumulative data can be found in Snapshot.</string>
+  <string name="AboutAppText">Aquatorls Approach members get rewarded for turf management purchases from authorized distributors. As an Approach member, you can earn points for you purchases that are redeemable for a variety of rewards directly with the Approach application. Please see the Redeem button in the lower navigation for current gift options.</string>
+  <string name="TmCourseHomeInfoText">Review information registered in your territory by Golf Course or Superintendent.</string>
+  <string name="TmDistributorHomeInfoText">Review information registered in your territory by Distributor and State.</string>
+  <string name="facebook_app_id">330924680998976</string>
+  <string name="fb_login_protocol_scheme">fb330924680998976</string>
+	<string name="accountNotActivated">"Your account is still being reviewed"</string>
+  <string name="Signup">Signup</string>
+  <string name="myqueue">My Queue</string>
+  <string name="Devicetype">Android</string>
+	<string name="app_name">Aquatrols</string>
+  <string name="message">Message</string>
+  <string name="textCancel">Cancel</string>
+  <string name="sendmail">Send Email</string>
+  <string name="textYes">OK</string>
+  <string name="Admin">admin</string>
+  <string name="noItem">0</string>
+  <string name="OneItem">1</string>
+  <string name="NofileToDownoad">Unable to download file</string>
+  <string name="BlueBackground">#0080bb</string>
+  <string name="CommaFormat">#,##0</string>
+  <string name="DbName">Aquatrols</string>
+  <string name="sds">SDS</string>
+  <string name="label">Label</string>
+  <string name="distributor">Distributor</string>
+  <string name="cityname">City Name</string>
+  <string name="address">Address</string>
+  <string name="zipcode">ZipCode</string>
+  <string name="mycartWarning">Please Add Products to Queue</string>
+  <string name="ApprovedDistributor">Approved Aquatrols Distributors</string>
+  <string name="notEnoughPoints">You dont have enough point balance</string>
+  <string name="rsspackage">com.rss.android</string>
+  <string name="rsslink">https://aquatrols.com</string>
+  <string name="youtubepackage">com.google.android.youtube</string>
+  <string name="youtubelink">https://www.youtube.com/user/Aquatrols</string>
+  <string name="facebookpackage">com.facebook.katana</string>
+  <string name="facebooklink">https://www.facebook.com/Aquatrols</string>
+  <string name="twitterpackage">com.twitter.android</string>
+  <string name="twitterlink">https://twitter.com/aquatrols</string>
+  <string name="instagrampackage">com.instagram.android</string>
+  <string name="instagramlink">https://www.instagram.com/aquatrols/</string>
+  <string name="privacyPolicyLink">https://aquatrols.com/approach/privacy/</string>
+  <string name="termsLink">https://aquatrols.com/approach/termsandconditions/</string>
+  <string name="faqLink">https://aquatrols.com/approach/faq/</string>
+  <string name="FAQ">FAQ</string>
+  <string name="supportLink">https://aquatrols.com/approach/support</string>
+  <string name="support">Support</string>
+  <string name="Gallon">Gallon</string>
+  <string name="Litre">Litre</string>
+  <string name="Bags">Bag</string>
+  <string name="aqueductflex">aqueduct flex</string>
+  <string name="MinimumBags">Enter Amount</string>
+  <string name="MinimumGallon">Enter Amount</string>
+  <string name="MinimumLitre">Enter Amount</string>
+  <string name="password_text">
+   
+    <i>
+      <u>Forgot Password?</u>
+    </i>
+  </string>
+  <string name="unauthorized">Unauthorized access</string>
+  <string name="invalidquantity">Invalid quantity</string>
+  <string name="splitSymbol">$</string>
+  <string name="deletedfromMycart">2</string>
+  <string name="pointsperGallon">points per Gallon</string>
+  <string name="pointsper">points per</string>
+  <string name="pointsperLitre">points per Litre</string>
+  <string name="changePlan">
+    UPGRADE NOW
+  </string>
+  <string name="TermConditionText">Agree to Terms and Conditions.</string>
+  <string name="forgetPasswrdEnterEmail">Enter the email address used to register your Aquatrols account.</string>
+  <string name="linkNotfound">Link not available</string>
+  <string name="addGallons">add gallons</string>
+  <string name="addbags">add bags</string>
+  <string name="addlitre">add litres</string>
+  <string name="Required">Required</string>
+  <string name="RequireField">## is required.</string>
+  <string name="RequireUserName">Email is required.</string>
+  <string name="RequireFirstName">First name is required.</string>
+  <string name="RequireLastName">Last name is required.</string>
+  <string name="RequireMobile">Mobile number is required.</string>
+  <string name="RequirePhone">Phone number is required.</string>
+  <string name="RequireAddress1">Address1 is required.</string>
+  <string name="RequireCoursename">Course name is required.</string>
+  <string name="RequireStreetAddress">Street address is required.</string>
+  <string name="RequireAddress2">Address2 is required.</string>
+  <string name="RequireCity">City is required.</string>
+  <string name="RequireCountry">Country is required.</string>
+  <string name="RequireUserCategory">User category is required.</string>
+  <string name="RequireState">State is required.</string>
+  <string name="RequireZip">Zipcode is required.</string>
+  <string name="RequireEmail">Email address is required.</string>
+  <string name="RequirePassword">Password is required.</string>
+  <string name="RequireCPassword">Confirm Password is required.</string>
+  <string name="RequireReferralCompanyName">Referral Company Name is required.</string>
+  <string name="PasswordNotMatch">Password does not match.</string>
+  <string name="EnterValidPassowrd">Enter a valid Password.</string>
+  <string name="RequireCVV">CVV number is required.</string>
+  <string name="NoInternet">Connection failed. Please check your wifi or data connection.</string>
+  <string name="didnotRecievedcode">Did not receive a code ?</string>
+  <string name="resend">Resend</string>
+  <string name="entercode">Enter verification code.</string>
+  <string name="allstates">All States</string>
+  <!-- google analytics-->
+  <string name="TrackingId">UA-126579020-1</string>
+  <string name="AppId ">com.approach.android</string>
+  <string name="appname">Aquatrols Approach</string>
+    <!-- About prpodcut screen-->
+  <string name="territorrymanagerInfotext">Ready to purchase Aquatrols® Products, or need more information? Contact the Territory Manager below for distributors in your area.</string>
+  <string name="Pturfdetail">From sports fields and golf courses to highly managed landscapes, Aquatrols technologies help turfgrass professionals worldwide to conserve water and energy while producing high quality turfgrass. Our products ensure consistency in a variety of conditions and can serve as a strong basis for sustainable turf management practices.</string>
+  <string name="Agriculturedetail">
+    Our unique water management chemistries allow agricultural producers to maximize irrigation efficiency and improve the efficacy of soil-applied chemicals. The result is improved crop productivity using less water and energy, effectively producing “more crop per drop.”
+  </string>
+  <string name="horticulturedetail">Soilless growing media producers and growers in the greenhouse and nursery industries rely on our unique products to create more desirable growing conditions. Aquatrols media wetting agents help growers improve plant quality, lower costs, and conserve water and other resources from production to point of sale.</string>
+  <string name="turf">Turf</string>
+  <string name="horticulture">Horticulture</string>
+  <string name="agriculture">Agriculture</string>
+  <string name="allproduct">All Products</string>
+  <string name="selectDistributor">Select distributor</string>
+  <string name="web">web</string>
+  <string name="yes">yes</string>
+  <string name="no">no</string>
+  <string name="Add">Add</string>
+  <!--Home screen-->
+  <string name="Dashboard">Dashboard</string>
+  <string name="Privacy">Privacy Policy</string>
+  <string name="terms">Terms &amp; Conditions</string>
+  <string name="Approved">approved</string>
+  <!--MyAccount screen-->
+  <string name="MyAccount">My Account</string>
+  <!--GiftScreen-->
+  <string name="RequireCardHolderName">Card holder name is required.</string>
+  <string name="baseurl">https://approach.aquatrols.com/</string>
+
+<!-- territory manager screen-->
+  <string name="dmaciusEmail">dmacias@aquatrols.com
+  </string>
+  <string name="kmauserEmail">
+    kmauser@aquatrols.com
+  </string>
+  <string name="jturnerEmail">
+    jturner@aquatrols.com
+  </string>
+  <string name="rwilsonEmail">
+    rwilson@aquatrols.com
+  </string>
+  <string name="glovellEmail">
+    glovell@aquatrols.com
+  </string>
+  <string name="spoynotEmail">
+    spoynot@aquatrols.com
+  </string>
+  <string name="tvalentineEmail">
+    tvalentine@aquatrols.com
+  </string>
+  <string name="whammEmail">
+    whamm@aquatrols.com
+  </string>
+  <string name="wdeaEmail">
+    wdea@aquatrols.com
+  </string>
+  <!--RedeemScreen-->
+  <string name="visaCardRedeemInfo">1,200 points = $100 gift card</string>
+  <string name="cabelaRedeemInfo">11,000 points = $100 gift card</string>
+  <string name="fairwaysRedeemInfo">10,000 points = $120 donation</string>
+  <string name="leonardRedeemInfo">10,000 points = $100 gift card</string>
+  <string name="SummitRedeemInfo">10,000 points = $110 contribution</string>
+  <string name="Accountcredit">10,000 points = $100 credit</string>
+  <string name="enterMultiplierpoints"> you can only enter points as multipliers of </string>
+  <string name="enterMultiplierCabelapoints"> you can only enter points as multipliers of 11000</string>
+  <string name="enterValidAmount">Amount is not valid</string>
+  <string name="usercannotbook">You are logged in as a user, you can not book or redeem a product.</string>
+  <string name="maxthreeCardAllowed">Maximum 3 cards allowed</string>
+  <string name="cabelaMaxamount">33000</string>
+  <string name="leonardMaxamount">30000</string>
+  <string name="Manager">manager</string>
+  <!--General-->
+  <string name="RequireAmount">Amount is required.</string>
+  <!--GiftScreen-->
+  <string name="RequireMessage">Message is required.</string>
+  <!--GiftScreen-->
+  <string name="RequireCardNumber">Card number is required.</string>
+  <string name="RequireExpiry">Expiry date is required.</string>
+  <string name="RequireCouponCode">Coupon code is required.</string>
+
+  <string name="IncorrectOTP">Password is incorrect.</string>
+  <!--Forgot Password-->
+  <string name="IncorrectConfirmPassword">Password does not match.</string>
+  <string name="InvalidEmail">Username is not valid.</string>
+  <string name="InvalidMobile">Mobile number is not valid.</string>
+  <string name="InvalidPhone">Phone number is not valid.</string>
+  <!--<string name="InvalidPassword">Password must be at least 8 characters and should include atleast one uppercase, numeric and special character.</string>-->
+  <string name="InvalidPassword">Password must be at least 4 characters and should include atleast one uppercase and one numeric</string>
+  <string name="invalidRedemptionCode">Redemption code must be 12 characters long.</string>
+  <string name="InvalidCouponCode">Coupon code must be 12 characters long.</string>
+  <string name="InvalidExpiry">Expiry date is not valid.</string>
+  <string name="InvalidCardNumber">Card number is invalid.</string>
+  <string name="InvalidCVVLength">CVV must be 3 characters long.</string>
+  <string name="InvalidZipLength">Zipcode must be minimum 5 characters long.</string>
+  <string name="InvalidZip">Zipcode is not valid.</string>
+  <string name="NoRecord">No Record Found</string>
+  
+  <string name="ServiceError">Sorry, a problem occurred. Please try again later.</string>
+  <string name="NetworkError">Connection failed. Please check your wifi or data connection.</string>
+  <string name="OTPSent">Check email or SMS for temporary password.</string>
+  <!--Forgot Password-->
+  <string name="SuccessOnGift">Success! An email with gift code and instructions will be sent to intended recepient.</string>
+  <!--GiftScreen-->
+  <string name="CabelaProduct">Bass Pro Shop/Cabelas Gift Card</string>
+  <string name="FairwaysProduct">Fair Ways Foundation Contribution</string>
+  <string name="FairwaysEducationalSummit">Fairways Educational Summit</string>
+  <string name="VisaGiftProduct">Visa Gift Card</string>
+  <string name="AccountCreditProduct">Account Credit</string>
+  <string name="AmLeonardProduct">A.M. Leonard – Horticultural Tool and Supply Company Gift Card</string>
+  <string name="FlexCardSuffix">=25120000000000000000?</string>
+  <string name="AcceptTermsConditions">To proceed you have to accept the Terms and Conditions.</string>
+  <string name="SuccessOnNotification">Your notifications have been updated.</string>
+  <string name="SelectPaymentMethod">Please select a payment method.</string>
+  <string name="Youareon">You are on the </string>
+
+  <string name="main_action_crop">CROP</string>
+  <string name="main_action_rotate">Rotate 90 degrees clockwise</string>
+  <string name="Points">Points</string>
+  <string name="book">Programs</string>
+  <string name="redeem">Redeem</string>
+  <string name="about">About Approach</string>
+  <string name="AboutusHomeMessage">Learn more about the Aquatrols brand, company products or find a Territory Manager in your area by clicking on one of the icons below.</string>
+  <string name="Home">Home</string>
+  <string name="Bookproducts">EOP Products</string>
+  <string name="NoProductBookMessage">There are currently no programs in effect. Please check with your Aquatrols representative for future program dates. Thank you.</string>
+  <string name="BookProductMessage">To participate in current program, simply type quantities in the Amount Field and hit the Add to Queue button. Once finished adding product, click Review to start the Checkout Process.</string>  
+  <string name="BookingDistributormessage">Choose your distributor from the dropdown menu to proceed.</string>
+  <string name="Bookingcheckout">Commit</string>
+  <string name="myqueueMessage">Please review and make any changes before continuing. Swipe left or right to delete product</string>
+  <string name="Bookingcheckoutmessage">Please review before enrollment.</string>
+  <string name="BookingcheckoutConfirmation">Thank you, your program enrollment has been received by Aquatrols.</string>
+  <string name="RedeemPoints">Redeem Points</string>
+  <string name="RedeemPointsCheckout">Points Checkout</string>
+  <string name="RedeemPointsMessage">Approach Point Redemption period begins on June 1, 2019. To redeem points for a rewards item, simply enter the desired amount of your available points in the “Amount” field and hit the “Redeem” button. Unredeemed points do not expire.</string>
+  <string name="PointsCheckoutConfirmation">Thank you, Your order has been confirmed and a notification will be sent to the email address associated with this account.</string>
+  <string name="pointsavailable">Points Available to Spend</string>
+  <!--signup-->
+  <string name="signUpUser">appuser@gmail.com</string>
+  <string name="signUpPass">P@ssW0rdAquatrol#</string>
+  <string name="newCourseEntered">Course Name you entered is new kindly fill address detail.</string>
+  <string name="coursename">Course name</string>
+  <string name="firstname">First name</string>
+  <string name="lastname">Last name</string>
+  <!--<string name="username">Username</string>
+  <string name="password">Password</string>      edit by me--> 
+  <string name="cpassword">Confirm Password</string>
+  <string name="referalCommanyname">Referral company name</string>
+  <string name="mobile">Mobile number</string>
+  <string name="acceptCondition">Accept terms and condition</string>
+  <!-- my account screen-->
+  <string name="pointsEarnedText">Total number of points earned over the program period</string>
+  <string name="pointsAvailableText">Number of points that have been “released” and are therefore available to spend </string>
+  <string name="pointsBalanceText">Number of points left available to spend</string>
+  <string name="pointsRedeemText">Number of points that have been spent by the facility</string>
+  <string name="currentpasswordrequired">Current password is required</string>
+  <string name="newpasswordrequired">New password is required</string>
+  <string name="confirmpassswordrequired">Confirm is password required</string>
+  <string name="swpiemessage">Swipe left or right to delete an item from the cart</string>
+  <string name="swipeTonext_prev">Swipe left or right to Move to another Product</string>
+  <string name="points">Points</string>
+  <string name="noAppFound">"No app found to send email"</string>
+  <string name="ApproachEmail">approach@aquatrols.com</string>
+  
+  <!-- add course screen-->
+  <string name="AddCourse">AddCourse</string>
+  <string name="selectState">Select State</string>
+  <string name="selectCountry">Select Country</string>
+  <string name="selectProvinces">Select Provinces</string>
+  <string name="termsandcondition"> I agree to the terms and conditions stated above.</string>
+  <string name="success">success</string>
+  <string name="USA">USA</string>
+  <string name="courseAdded">Course Added succesfully</string>
+
+  <!-- Database query-->
+  <string name="deleteQuery">delete from ProductListDbModel</string>
+  <string name="insertString">insert</string>
+  <string name="updateString">update</string>
+  <!-- Mycart screen-->
+  <string name="addedToqueue">Added to Queue</string>
+  <!-- Confirm dialogue-->
+  <string name="confirmationMessage">Are you sure want to Exit.</string>
+  <string name="confirmationDeleteMessage">Are you sure to remove this item from queue.</string>
+  <string name="confirm">Confirm</string>
+  <string name="error">Error</string>
+  <string name="Ok">Ok</string>
+  <string name="cancel">Cancel</string>
+  <string name="canada">canada</string>
+  <string name="newVersionmessage">Update Available</string>
+  <string name="newVersion">An update for the application is required, please download latest version.</string>
+  <!--<string name="fb://page/">olderVersionfbApp</string>
+  <string name="fb://facewebmodal/f?href=">newerVersionfbApp</string>-->
+  
+  <!-- Exception query-->
+  <string name="ExceptionData">ExceptionData</string>
+  <string name="token">token</string>
+  <!-- API URL-->
+  <string name="WishListClearQueueURL">api/WishList/ClearQueue/</string>
+  <string name="RewardItemListURL">api/RewardItem/list</string>
+  <string name="WishListURL">api/WishList/list/</string>
+  <string name="WishListDeleteURL">api/WishList/Delete/</string>
+  <string name="WishListSaveURL">api/WishList/save</string>
+  <string name="DistinctDisListURL">api/distributor/distinctdistributorlist</string>
+  <string name="ItemCountURL">api/WishList/ItemCount</string>
+  <string name="LoyaltyPointsRedeemURL">api/LoyaltyPoints/Redeem</string>
+  <string name="PushNotificationSaveURL">api/PushNotification/save</string>
+  <string name="ProductBookURL">api/Product/Book</string>
+  <string name="ProductListURL">api/Product/list</string>
+  <string name="ProductBookingDetailURL">api/Product/BookingDetail/</string>
+  <string name="DistributorLstURL">api/distributor/list</string>
+  <string name="NotificationsURL">api/user/Notifications</string>
+  <string name="ChangePasswordURL">api/account/ChangePassword</string>
+  <string name="GetSnapshotExcelURL">api/TmSnapshot/GetSnapshotExcel</string>
+  <string name="ExportDistURL">api/TmDistributorNew/ExportToExcelAsync</string>
+  <string name="CoursesSaveURL">api/Courses/Save</string>
+  <string name="GetAccessTokenURL">api/Account/GetAccessToken</string>
+  <string name="AccountSigninURL">api/Account/Signin?version=android</string>
+  <string name="UserSignupURL">api/Account/Signup</string>
+  <string name="SendOTPURL">api/Account/SendOTP</string>
+  <string name="UserDetailURL">api/user/detail/</string>
+  <string name="DistributorListUserURL">api/distributor/list/user/</string>
+  <string name="ResetPasswordURL">api/Account/ResetPassword</string>
+  <string name="ValidateOTPURL">api/Account/ValidateOTP/</string>
+  <string name="ListURL">api/Courses/List/</string>
+  <string name="GetCoursesURL">api/TmCourse/GetCourses/</string>
+  <string name="GetCourseSearchResultURL">api/TmCourse/GetCourseSearchResult/</string>
+  <string name="GetUserSearchResultURL">api/TmCourse/GetUserSearchResult/</string>
+  <string name="GetAllTmRegionUsersURL">api/TmCourse/GetAllTmRegionUsers/</string>
+  <string name="GetAllStatesURL">api/TmDistributorNew/GetAllStates/</string>
+  <string name="GetTmDistributorsURL">api/TmDistributorNew/GetTmDistributors/</string>
+  <string name="GetDistributorSearchResultURL">api/TmDistributorNew/GetDistributorSearchResult/</string>
+  <string name="GetSignUpCommitmentCountURL">api/TmSnapshot/GetSignUpCommitmentCount/</string>
+  <string name="GetTotalQuantityCommitedURL">api/TmSnapshot/GetTotalQuantityCommited/</string>
+  <string name="GetCommitmentPerDistributorURL">api/TmSnapshot/GetCommitmentPerDistributor</string>
+  <string name="ExceptionHandlingURL">api/ExceptionHandling/save</string>
+  <string name="username">Username</string> 
+  <string name="password">Password</string>
+  <string name="isApproved">isApproved</string>
+  <string name="Role">Role</string>
+  <string name="UserId">UserId</string>
+  <string name="Smusername">username</string>
+  <string name="SmUserId">userId</string>
+  <string name="IsTerritory">IsTerritory</string>
+  <string name="LinkData">LinkData</string>
+  <string name="Profile">Profile</string>
+  <string name="Product">Product</string>
+  <string name="cartItem">cartItem</string>
+  <string name="IsTerms">IsTerms</string>
+  <string name="BalancePoint">BalancePoint</string>
+  <string name="country">country</string>
+  <string name="distributorId">distributorId</string>
+  <string name="distributorName">distributorName</string>
+  <string name="IsManualVisible">IsManualVisible</string>
+  <string name="Smcoursename">coursename</string>
+  <string name="IsNotificationChecked">IsNotificationChecked</string>
+  <string name="IsEmailChecked">IsEmailChecked</string>
+  <string name="deviceToken">deviceToken</string>
+  <string name="userinfo">userinfo</string>
+  <string name="tmCourseId">tmCourseId</string>
+  <string name="tmUserId">tmUserId</string>
+  <string name="tmDistributorId">tmDistributorId</string>
+  <string name="tmState">tmState</string>
+  <string name="TmDistributerFileName">TmDistributerFileName</string>
+  <string name="position">position</string>
+  <string name="IsValidAmount">IsValidAmount</string>
+  <string name="Quantity">Quantity</string>
+  <string name="IsManualVisibleOnProduct">"IsManualVisibleOnProduct"</string>
+  <!-- Exception string-->
+  <string name="AddCourseActivity">AddCourseActivity</string>
+  <string name="LoginActivity">LoginActivity</string>
+  <string name="MainActivity">MainActivity</string>
+  <string name="MyAccountActivity">MyAccountActivity</string>
+  <string name="OverlayActivity">OverlayActivity</string>
+  <string name="SignUpActivity">SignUpActivity</string>
+  <string name="SplashActivity">SplashActivity</string>
+  <string name="TermsWebviewActivity">TermsWebviewActivity</string>
+  <string name="TMCourseHomeActivity">TMCourseHomeActivity</string>
+  <string name="TmCourseResultActivity">TmCourseResultActivity</string>
+  <string name="TMDistributorHomeActivity">TMDistributorHomeActivity</string>
+  <string name="TmSnapshotActivity">TmSnapshotActivity</string>
+  <string name="TMViewHomeActivity">TMViewHomeActivity</string>
+  <string name="WebViewActivity">WebViewActivity</string>
+  <string name="OnCreate">OnCreate</string>
+  <string name="FindControlsById">FindControlsById</string>
+  <string name="Show_Overlay">Show_Overlay</string>
+  <string name="OnActivityResult">OnActivityResult</string>
+  <string name="Submit">Submit</string>
+  <string name="OnStart">OnStart</string>
+  <string name="OnStop">OnStop</string>
+  <string name="CheckValidation">CheckValidation</string>
+  <string name="OnFocusChange">OnFocusChange</string>
+  <string name="ShowHidePassword">ShowHidePassword</string>
+  <string name="OnTouch">OnTouch</string>
+  <string name="HitSignInAPI">HitSignInAPI</string>
+  <string name="OnClick">OnClick</string>
+  <string name="OnBackPressed">OnBackPressed</string>
+  <string name="ImgMenu_Click">ImgMenu_Click</string>
+  <string name="ImgCart_Click">ImgCart_Click</string>
+  <string name="GetLatestVersion">GetLatestVersion</string>
+  <string name="GetTokenForSignup">GetTokenForSignup</string>
+  <string name="SubmitForm">SubmitForm</string>
+  <string name="GetPasswordEntity">GetPasswordEntity</string>
+  <string name="HitChangePasswordAPI">HitChangePasswordAPI</string>
+  <string name="GetUserEntity">GetUserEntity</string>     
+  <string name="HitCourseAPI">HitCourseAPI</string>
+  <string name="GetAddress">GetAddress</string>
+  <string name="DoDelay">DoDelay</string>
+  <string name="OnPageFinished">OnPageFinished</string>
+  <string name="OnResume">OnResume</string>
+  <string name="AttachFile">AttachFile</string>
+  <string name="StartNewDownload">StartNewDownload</string>
+  <string name="HitSignUpAPI">HitSignUpAPI</string>
+  <string name="SpinnerProvinces_ItemSelected">SpinnerProvinces_ItemSelected</string>
+  <string name="SpinnerState_ItemSelected">SpinnerState_ItemSelected</string>
+  <string name="SpinnerCountry_ItemSelected">SpinnerCountry_ItemSelected</string>
+  <string name="BindCountry">BindCountry</string>
+  <string name="BindStates">BindStates</string>
+  <string name="Bindprovinces">Bindprovinces</string>
+  <string name="GetCourseEntity">GetCourseEntity</string>
+  <string name="HitAddCourseAPI">HitAddCourseAPI</string>
+  <string name="llUserInfo_Click">llUserInfo_Click</string>
+  <string name="HitGetUserInfoAPI">HitGetUserInfoAPI</string>
+  <string name="BottomBar_NavigationItemSelected">BottomBar_NavigationItemSelected</string>
+  <string name="BindInactiveFragment">BindInactiveFragment</string>
+  <string name="BindDashboardFragment">BindDashboardFragment</string>
+  <string name="GetCartItemData_ByLoggedInUser">GetCartItemData_ByLoggedInUser</string>
+  <string name="HandleDeeplink">HandleDeeplink</string>
+  <string name="BtnTmView_Click">BtnTmView_Click</string>
+  <string name="CheckAppPermissions">CheckAppPermissions</string>
+  <string name="HitUpdateNotificationAPI">HitUpdateNotificationAPI</string>
+  <string name="ChkEmail_CheckedChange">ChkEmail_CheckedChange</string>
+  <string name="ChkNotification_CheckedChange">ChkNotification_CheckedChange</string>
+  <string name="TogglePurchasehistory">TogglePurchasehistory</string>
+  <string name="ToggleNotification">ToggleNotification</string>
+  <string name="ToggleInfoAndPass">ToggleInfoAndPass</string>
+  <string name="ToggleAccountSummary">ToggleAccountSummary</string>
+  <string name="HitPurchaseHistortList">HitPurchaseHistortList</string>
+  <string name="CheckValidationFor_AutocompleteTextview">CheckValidationFor_AutocompleteTextview</string>
+  <string name="AutocompleteCoursename_ItemClick">AutocompleteCoursename_ItemClick</string>
+  <string name="AutocompleteCoursename_TextChanged">AutocompleteCoursename_TextChanged</string>
+  <string name="AutocompleteDSRname_TextChanged">AutocompleteDSRname_TextChanged</string>
+  <string name="AutocompleteDSRname_ItemClick">AutocompleteDSRname_ItemClick</string>
+  <string name="GetTerritorySuperIntendantList">GetTerritorySuperIntendantList</string>
+  <string name="GetTerritoryCourseList">GetTerritoryCourseList</string>
+  <string name="AutocompleteTmCoursename_TextChanged">AutocompleteTmCoursename_TextChanged</string>
+  <string name="AutocompleteTmCoursename_ItemClick">AutocompleteTmCoursename_ItemClick</string>
+  <string name="AutocompleteTmSuperIntendantname_TextChanged">AutocompleteTmSuperIntendantname_TextChanged</string>
+  <string name="AutocompleteTmSuperIntendantname_ItemClick">AutocompleteTmSuperIntendantname_ItemClick</string>
+  <string name="GetTmDistributorResultData">GetTmDistributorResultData</string>
+  <string name="GetTmSuperintendentResultData">GetTmSuperintendentResultData</string>
+  <string name="GetTmCourseResultData">GetTmCourseResultData</string>
+  <string name="GetTerritoryDistributorExcelUrl">GetTerritoryDistributorExcelUrl</string>
+  <string name="GetAllTmDistributorList">GetAllTmDistributorList</string>
+  <string name="GetAllTmStateList">GetAllTmStateList</string>
+  <string name="SpinnerTmState_ItemSelected">SpinnerTmState_ItemSelected</string>
+  <string name="SpinnerTmDistributor_ItemSelected">SpinnerTmDistributor_ItemSelected</string>
+  <string name="GetTotalCommitmentsPerDistributor">GetTotalCommitmentsPerDistributor</string>
+  <string name="GetTotalCommitmentsPerCountry">GetTotalCommitmentsPerCountry</string>
+  <string name="GetTotalSignupsandCommitments">GetTotalSignupsandCommitments</string>
+  <string name="GetTerritorySnapshotExcelUrl">GetTerritorySnapshotExcelUrl</string>
+  <string name="HelloWebViewClient">HelloWebViewClient</string>
+  <string name="AboutProductViewHolder">AboutProductViewHolder</string>
+  <string name="OnBindViewHolder">OnBindViewHolder</string>
+  <string name="GiftCardAdapter">GiftCardAdapter</string>
+  <string name="GiftCardAdapterViewHolder">GiftCardAdapterViewHolder</string>
+  <string name="HitRedeemPointsAPI">HitRedeemPointsAPI</string>
+  <string name="HandleRedeemButtonclick">HandleRedeemButtonclick</string>
+  <string name="Bind">Bind</string>
+  <string name="CheckUser_LoggedInAsManager">CheckUser_LoggedInAsManager</string>
+  <string name="MyViewHolder">MyViewHolder</string>
+  <string name="ProductListAdapter">ProductListAdapter</string>
+  <string name="HandleAddToOrderButtonclick">HandleAddToOrderButtonclick</string>
+  <string name="HandleBuynNowButtonclick">HandleBuynNowButtonclick</string>
+  <string name="IsProductBookable_ByLoggedInUser">IsProductBookable_ByLoggedInUser</string>
+  <string name="ShowAlert">ShowAlert</string>
+  <string name="CallMyQueueFragment">CallMyQueueFragment</string>
+  <string name="AddToQueue">AddToQueue</string>
+  <string name="OnCreateView">OnCreateView</string>
+  <string name="AboutFragment">AboutFragment</string>
+  <string name="AboutProductDetailFragment">AboutProductDetailFragment</string>
+  <string name="AboutProductFragment">AboutProductFragment</string>
+  <string name="SpinnerMarket_ItemSelected">SpinnerMarket_ItemSelected</string>
+  <string name="Btncontactus_Click">Btncontactus_Click</string>
+  <string name="BookFragment">BookFragment</string>
+  <string name="HitDistributorAPI">HitDistributorAPI</string>
+  <string name="SpinnerDistributor_ItemSelected">SpinnerDistributor_ItemSelected</string>
+  <string name="BookingConfirmFragment">BookingConfirmFragment</string>
+  <string name="DashboardFragment">DashboardFragment</string>
+  <string name="FlashCardFragment">FlashCardFragment</string>
+  <string name="ShowCase">ShowCase</string>
+  <string name="ForgetDialogFragment">ForgetDialogFragment</string>
+  <string name="ValidateInputs">ValidateInputs</string>
+  <string name="SendOTPCode">SendOTPCode</string>
+  <string name="CheckOTP">CheckOTP</string>
+  <string name="ResetUserPassword">ResetUserPassword</string>
+  <string name="MyQueueFragment">MyQueueFragment</string>
+  <string name="ShowCaseView">ShowCaseView</string>
+  <string name="GetWishListItems">GetWishListItems</string>
+  <string name="DeleteItemFromQueue">DeleteItemFromQueue</string>
+  <string name="OnSwiped">OnSwiped</string>
+  <string name="BtnConfirm_Click">BtnConfirm_Click</string>
+  <string name="ProductCheckOutFragment">ProductCheckOutFragment</string>
+  <string name="HitCheckoutAPI">HitCheckoutAPI</string>
+  <string name="GetData">GetData</string>
+  <string name="ProductListFragment">ProductListFragment</string>
+  <string name="HitProductListAPI">HitProductListAPI</string>
+  <string name="RedeemConfirmFragment">RedeemConfirmFragment</string>
+  <string name="ChangePassword">ChangePassword</string>
+  <string name="RedeemFragment">RedeemFragment</string>
+  <string name="HitRewardItemListAPI">HitRewardItemListAPI</string>
+  <string name="TerritoryManagerFragment">TerritoryManagerFragment</string>
+  <string name="Utility">Utility</string>
+  <string name="ClearQueue">ClearQueue</string>
+  <string name="GetRewardItem">GetRewardItem</string>
+  <string name="GetDistinctDistributor">GetDistinctDistributor</string>
+  <string name="GetWishListItemCount">GetWishListItemCount</string>
+  <string name="RedeemPoint">RedeemPoints</string>
+  <string name="SendDeviceToken">SendDeviceToken</string>
+  <string name="Checkout">Checkout</string>
+  <string name="GetAllProducts">GetAllProducts</string>
+  <string name="GetPurchaseHistory">GetPurchaseHistory</string>
+  <string name="GetAllDistributors">GetAllDistributors</string>
+  <string name="UpdateNotificationSetting">UpdateNotificationSetting</string>
+  <string name="AddNewCourse">AddNewCourse</string>
+  <string name="UserLogin">UserLogin</string>
+  <string name="UserSignUp">UserSignUp</string>
+  <string name="SendOTP">SendOTP</string>
+  <string name="GetUserInfo">GetUserInfo</string>
+  <string name="GetDistributorList">GetDistributorList</string>
+  <string name="VerifyOTP">VerifyOTP</string>
+  <string name="GetCourseList">GetCourseList</string>
+  <string name="GetTmCourseList">GetTmCourseList</string>
+  <string name="GetTmCourseSearchResult">GetTmCourseSearchResult</string>
+  <string name="GetTmSuperIntendantSearchResult">GetTmSuperIntendantSearchResult</string>
+  <string name="GetTmSuperIntendantList">GetTmSuperIntendantList</string>
+  <string name="GetTmStateList">GetTmStateList</string>
+  <string name="GetTmDistributorList">GetTmDistributorList</string>
+  <string name="GetTmDistributorSearchResultData">GetTmDistributorSearchResultData</string>
+  <string name="GetTmTotalSignupAndCommitments">GetTmTotalSignupAndCommitments</string>
+  <string name="GetTmTotalCommitmentsPerRegion">GetTmTotalCommitmentsPerRegion</string>
+  <string name="GetTmTotalCommitmentsPerDistributor">GetTmTotalCommitmentsPerDistributor</string>
+  <string name="SendDeviceTokenToServer">SendDeviceTokenToServer</string>
+  <string name="ProductCheckoutAdapter">ProductCheckoutAdapter</string>
+  
+  <string name="User">User</string>
+  <string name="Login">Login</string>
+  <string name="TRUE">TRUE</string>
+  <string name="UserTiedToCourseTxtValueYes">Is Course Enrolled: Yes</string>
+  <string name="UserTiedToCourseTxtValueNo">Is Course Enrolled: No</string>
+  <string name="HeadingtxtValue">Distributor Search Result</string>
+  <string name="TmSnapShotFileName">TmSnapShotFileName</string>
+  <string name="fileprovider">.fileprovider</string>
+  <string name="Problem">Problem</string>
+  <string name="BookingDateHeadertxtValue">Booking Date</string>
+  <string name="textHtml">text/html</string>
+  <string name="detVail">detail</string>
+  <string name="OpenEmailApp">OpenEmailApp</string>
+  <string name="TxtPhoneWDea_Click">TxtPhoneWDea_Click</string>
+  <string name="TxtDMaciusPhone_Click">TxtDMaciusPhone_Click</string>
+  <string name="Tel">"tel:"</string>
+  <string name="TxtJTurnerEmail_Click">TxtJTurnerEmail_Click</string>
+  <string name="TxtRWilsonMobile_Click">TxtRWilsonMobile_Click</string>
+  <string name="TxtGLovellMobile_Click">TxtGLovellMobile_Click</string>
+  <string name="TxtSPoynotMobile_Click">TxtSPoynotMobile_Click</string>
+  <string name="TxtTValentineMobile_Click">TxtTValentineMobile_Click</string>
+  <string name="TxtWHammMobile_Click">TxtWHammMobile_Click</string>
+  <string name="TxtMobileWDea_Click">TxtMobileWDea_Click</string>
+  <string name="TxtKMauserMobile_Click">TxtKMauserMobile_Click</string>
+  <string name="from">from</string>
+  <string name="DistNotfound">No Approved Aquatrols Distributors found</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <RelativeLayout
+        android:id="@+id/rllContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:elevation="4dp"
+        android:paddingLeft="@dimen/InnerContentPadding"
+        android:paddingRight="@dimen/InnerContentPadding"
+        android:background="@color/appBackground">
+        <TextView
+            android:id="@+id/txtHeading"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/QueueMessageTextsize"
+            android:textColor="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms &amp; Conditions"
+            android:tag="Heading"
+            android:textStyle="bold" />
+        <ImageView
+            android:src="@drawable/back"
+            android:layout_width="@dimen/backIconwidth"
+            android:layout_height="@dimen/backIconHeight"
+            android:id="@+id/imgBack"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/webview"
+        android:paddingLeft="@dimen/InnerContentPadding"
+        android:paddingRight="@dimen/InnerContentPadding"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9" />
+</LinearLayout>

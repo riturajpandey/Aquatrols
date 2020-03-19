@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llContainer"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/menuIconheight">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/InnerContentPadding"
+        android:weightSum="100">
+        <ImageView
+            android:id="@+id/imgGiftCardLogo"
+            android:scaleType="fitCenter"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/UserInfoContainerHeight"
+            android:src="@drawable/fairways"
+            android:layout_weight="25"
+            android:layout_gravity="center" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="5" />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:layout_width="0dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtProductInfo"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/InnerLabelExtraLongsize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart" />
+            <View
+                android:layout_height="@dimen/QueueMessageTextsize"
+                android:layout_width="match_parent" />
+            <TextView
+                android:id="@+id/txtProductDesc"
+                android:gravity="left"
+                android:textColor="@color/black"
+                android:textSize="@dimen/InnerLabelAboutusPageSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart" />
+            <View
+                android:layout_height="@dimen/QueueMessageTextsize"
+                android:layout_width="match_parent" />
+            <TextView
+                android:id="@+id/txtInfotext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/InnerLabelAboutusPageSize" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="@dimen/InnerContentPadding"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtAmounttext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" />
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtInputLayoutAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.1"
+            android:theme="@style/TextLabel1">
+            <EditText
+                android:id="@+id/editAmount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:singleLine="true"
+                android:letterSpacing="0.1"
+                android:tag="Gallons"
+                android:textColorHint="#046C81"
+                android:imeOptions="actionDone"
+                android:textColor="#000"
+                android:textSize="@dimen/InnerLabelAboutusPageSize"
+                android:hint="Amount"
+			    android:maxLength="16"/>
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="@dimen/InnerContentPadding"
+            android:weightSum="100">
+            <View
+                android:layout_height="@dimen/checkOutbtnHeight"
+                android:layout_weight="60"
+                android:layout_width="0dp" />
+            <Button
+                android:id="@+id/btnRedeem"
+                android:layout_height="@dimen/checkOutbtnHeight"
+                android:layout_weight="45"
+                android:text="Redeem"
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:textAllCaps="false"
+                android:layout_marginRight="@dimen/InnercontentMargin"
+                android:textSize="@dimen/ButtontextSize"
+                android:background="#005A82"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:background="@color/black" />
+</LinearLayout>

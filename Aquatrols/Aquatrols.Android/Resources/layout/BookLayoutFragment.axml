@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/backIconHeight">
+    <TextView
+        android:id="@+id/txtPoints"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/backIconHeight"
+        android:textSize="@dimen/InnerLabelExtraLongsize"
+        android:textColor="@color/black"
+        android:text="Choose your distributor" />
+    <Spinner
+        android:id="@+id/spinnerDistributor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/signUpHederHeight"
+        android:spinnerMode="dropdown" />
+   <View 
+		android:background="#000"
+		android:layout_height="1dp"
+		android:layout_width="match_parent"
+		android:layout_marginTop="@dimen/InnerContentPadding"/>
+	<Button
+        android:id="@+id/btnContinue"
+        android:layout_width="@dimen/ButtonWidth"
+        android:layout_height="@dimen/ButtonHeight"
+        android:textColor="#FFF"
+        android:textSize="@dimen/ButtontextSize"
+        android:letterSpacing=".2"
+        android:text="Continue"
+        android:background="#005A82"
+        android:layout_marginTop="@dimen/InnerLabelAboutusPageSize"
+        android:textAllCaps="false" />
+</LinearLayout>
